@@ -5,12 +5,18 @@ Pages 1 and 5 distinguish the working-session recording from the demo/API walkth
 The suggested implementation allocation is 90–120 minutes; page 1 explicitly allows further
 polishing. A later walkthrough should be identified as a walkthrough, not as the original work.
 
-## What to record now
+## Walkthrough and optional demo recording
 
 The author reports that the main working session was recorded, including an explanation of
 unfinished work and long LTX generation. Later completion was not fully recorded. Preserve that
-recording and describe its coverage accurately in the handoff. The remaining video is a short
-demo of the finished backend. **5–7 minutes is a suggested demo length, not a challenge limit.**
+recording and describe its coverage accurately in the handoff.
+
+The finished [API walkthrough](../API_WALKTHROUGH.md) covers the request, live status,
+download and all three required concepts, with repository video links and verified local API
+results. The challenge allows a demo video **or** API walkthrough and does not specify the
+walkthrough format. The written walkthrough is the chosen demo deliverable; the work-session
+recording remains separate. The optional recording plan below is available if a screencast is
+also desired. **5–7 minutes is a suggested demo length, not a challenge limit.**
 
 Use the same screen-recording setup as the work session. Make terminal/API text readable and
 include computer audio when playing the chemistry videos. Do a short playback check first.
@@ -112,14 +118,14 @@ are recorded runs. All 30 cached speech/clip files per resumed job stayed unchan
 | FastAPI backend; request/list/status/result API; async flow; visual and audio output | Implemented; all three final examples passed live API delivery. |
 | Short README with setup, run, API and tests | [README](../README.md), shortened to the quick start. |
 | Short architecture note covering the three boundaries | [Architecture note](architecture.md). |
-| Demo video or API walkthrough covering all three queries | Record the walkthrough above. |
-| Three best generated videos **committed** with their learner queries | Present in `examples/videos/`; still need to be committed and pushed. |
+| Demo video or API walkthrough covering all three queries | [Written API walkthrough](../API_WALKTHROUGH.md), including the three video links. |
+| Three best generated videos **committed** with their learner queries | Present in `examples/videos/`; verify they are included in the published revision. |
 | GitHub repository link and reviewer read access | Remote is configured; publish changes and verify access for all three reviewers. |
 | ZIP containing the work | Package the source, documentation and selected examples, excluding credentials, caches and model weights. |
 | Google Drive link to full-screen/face work recording | Recording coverage is author-reported; upload the actual recording and state that later polishing happened afterward. |
 | Rough per-artifact cost explanation | Usage/provenance is saved; reconcile provider pricing/billing before quoting a total. |
 
-Send the code link, ZIP, demo link and Google Drive recording link to **careers@growtrics.ai**,
+Send the code link, ZIP, API walkthrough link and Google Drive recording link to **careers@growtrics.ai**,
 with **praveen.k@growtrics.ai** and **wayne.le@growtrics.ai** in CC. The PDF asks that all three
 have read access to the repository. No submission email or access invitation has been sent.
 
@@ -127,4 +133,5 @@ Suggested recording-coverage note, adjusted to match what is actually in the fil
 
 > The recording covers the main implementation session, including my explanation of the
 > remaining work and LTX generation latency. I completed final assembly, validation and
-> documentation afterward. The separate demo shows the finished backend and all three concepts.
+> documentation afterward. The written API walkthrough demonstrates the finished backend
+> and links to generated videos for all three concepts.

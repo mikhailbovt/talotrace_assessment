@@ -5,7 +5,7 @@ Real OpenAI retrieval/direction/images and Kokoro speech feed a selectable video
 The three selected examples use local keyframe composition with a moving hand; LTX-2.5 is
 also integrated. No frontend is included.
 
-**[Best videos and learner questions](examples/videos/)** · **[Architecture note](docs/architecture.md)**
+**[API walkthrough](API_WALKTHROUGH.md)** · **[Best videos and learner questions](examples/videos/)** · **[Architecture note](docs/architecture.md)**
 
 ## Setup
 
@@ -96,5 +96,5 @@ docker compose config --quiet
 Automated tests make no paid provider calls. Live checks in [the setup guide](docs/setup.md#verification-and-reproducibility)
 may incur provider costs. Verified results: [setup status](docs/setup-status.md).
 All test media stays in `data/tests/`; selected videos, scripts and manifests are in `examples/videos/`.
-See [recording and submission instructions](docs/submission.md) for the demo.
+See the [API walkthrough](API_WALKTHROUGH.md) for all three concepts and the [submission checklist](docs/submission.md#handoff-checklist).
 
