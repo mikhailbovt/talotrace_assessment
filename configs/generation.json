@@ -1,0 +1,34 @@
+{
+  "stage": "full_video_pipeline_authorized",
+  "priority": "quality_over_latency",
+  "director_model_requested": "gpt-5.6-luna",
+  "image_model_requested": "gpt-image-2",
+  "openai_models_verified": true,
+  "keyframes_per_video": {
+    "min": 5,
+    "max": 10
+  },
+  "video_checkpoint": "ltx-2.5-22b-dev-transformer-bf16.safetensors",
+  "quantization": "none",
+  "video_vae": "ltx-2.5-video-vae-bf16.safetensors",
+  "memory_policy": "allow_cpu_offload_without_weight_quantization",
+  "quality_preset": "full_bf16_two_stage_whiteboard_visual_acceptance_required",
+  "approaches": [
+    "whiteboard_loop"
+  ],
+  "max_references_per_msr_generation": 5,
+  "tts_voice": "af_heart",
+  "tts_sample_rate": 24000,
+  "audio_policy": "full_script_kokoro_only_no_music_no_native_ltx_audio",
+  "visual_style": "educational_doodles_whiteboard",
+  "required_queries": [
+    "How does the pH scale work?",
+    "Why do atoms form covalent bonds?",
+    "What is the difference between ionic and covalent bonding?"
+  ],
+  "openai_models_verification": "Session models authenticated; real vision, embedding, direction and 15 keyframe generations completed on 2026-09-08; scientific image review is separate",
+  "embedding_model": "text-embedding-3-large",
+  "test_artifacts_directory": "data/tests",
+  "style_anchor": "assets/references/style_anchor.png",
+  "hand_reference": "assets/references/hand_reference.png"
+}

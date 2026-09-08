@@ -1,0 +1,15 @@
+# Keep the API in Linux while editing host source on Windows.
+services:
+  api:
+    command:
+      - /app/.venv/bin/uvicorn
+      - talotrace.main:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --reload
+    environment:
+      WATCHFILES_FORCE_POLLING: "true"
+    volumes:
+      - ./src:/app/src:ro

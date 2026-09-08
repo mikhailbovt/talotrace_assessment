@@ -1,0 +1,425 @@
+{
+  "root": "../material",
+  "files": [
+    {
+      "path": "challenge/Agentic_Backend_Challenge_AI_Chemistry_Video_Request_Service.pdf",
+      "bytes": 93161,
+      "sha256": "63e40d0cd56fb3e328e59cb3eca3085d9fea30e4ffbef5a4be06aee0d9323860"
+    },
+    {
+      "path": "chem_material/Individual/1! Essential Ideas of Chemistry.pdf",
+      "bytes": 93396,
+      "sha256": "fa908c275cd0e4d671e1d532de51e8e0d67742d1dcb58ff7fe1e7920cd1bdfb0"
+    },
+    {
+      "path": "chem_material/Individual/1.1! Introduction to Chemistry.pdf",
+      "bytes": 3077255,
+      "sha256": "5ef03331656b59751ab6e301f3a2d926ce554b38c42004e4a0b163b39f1fc130"
+    },
+    {
+      "path": "chem_material/Individual/1.2! Measurements.pdf",
+      "bytes": 416258,
+      "sha256": "d7c7321ea1ef13aa3b8c892b21cf715c7a7646016de5acca1755ef1edaa83699"
+    },
+    {
+      "path": "chem_material/Individual/1.3! Mathematical Treatment of Measurement Results.pdf",
+      "bytes": 1045066,
+      "sha256": "b153dbc2ad35ad96d44a64a7977c4f111c17c6c2255f445d805e6226f0261797"
+    },
+    {
+      "path": "chem_material/Individual/1.E! Essential Ideas of Chemistry- Homework.pdf",
+      "bytes": 118741,
+      "sha256": "b063d44f0f12f061a110631e60fb628971054fe309fdb367a95d509f339d0705"
+    },
+    {
+      "path": "chem_material/Individual/10! Acid-Base Equilibria.pdf",
+      "bytes": 88277,
+      "sha256": "8b4210634b73e269ddb9f57fa8267ef2214fe770b7dae8f53eb22fe1f11601ac"
+    },
+    {
+      "path": "chem_material/Individual/10.1! Introduction to Br\u00f8nsted-Lowry Acids and Bases.pdf",
+      "bytes": 2268866,
+      "sha256": "aaf7a565efc123a1776e7b881e86c3c6a74f5db660733e5b9f67105f29cfb717"
+    },
+    {
+      "path": "chem_material/Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf",
+      "bytes": 4574919,
+      "sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+    },
+    {
+      "path": "chem_material/Individual/10.3! Hydrolysis of Salt Solutions.pdf",
+      "bytes": 175387,
+      "sha256": "d5d120cf988a0b220cb3f16e4c033d1e3597db000cdb435c63e1685bee799559"
+    },
+    {
+      "path": "chem_material/Individual/10.4! Buffers.pdf",
+      "bytes": 1978393,
+      "sha256": "10812d88910806a7470b4e83419f61369385f778e5526129d03383c2fe9c56cd"
+    },
+    {
+      "path": "chem_material/Individual/10.E! Acid-Base Equilibria - Homework.pdf",
+      "bytes": 158091,
+      "sha256": "50a1ea54fb4b48782efa32db0bc382f65ed391af763865367cc89e1440cdf39b"
+    },
+    {
+      "path": "chem_material/Individual/11! Thermochemistry.pdf",
+      "bytes": 92886,
+      "sha256": "13f183599093d03fc6857858e717142fbda4f6168d895be820e37ad45ae601d8"
+    },
+    {
+      "path": "chem_material/Individual/11.1! Energy Basics.pdf",
+      "bytes": 5787548,
+      "sha256": "9c0af821c01c9a7ea606e3a5d31d23655b484cd6d1a0ccceff5aba259b695faa"
+    },
+    {
+      "path": "chem_material/Individual/11.2! Calorimetry.pdf",
+      "bytes": 1683357,
+      "sha256": "f1d239888085e218d372ec0cb02bd83d37e593b716b82348f09da10ebd2d93e8"
+    },
+    {
+      "path": "chem_material/Individual/11.3! Enthalpy- Introduction.pdf",
+      "bytes": 563048,
+      "sha256": "880df3e23dd4e3314177a55f23e09670db794cc4ec3ceecb9a35b7c78b83f652"
+    },
+    {
+      "path": "chem_material/Individual/11.4! Enthalpy- Heat of Combustion.pdf",
+      "bytes": 613346,
+      "sha256": "7bd83feed81297bfd6d219aefa2721bbe7a8035e2ad7113aa1cad39bccfaf8da"
+    },
+    {
+      "path": "chem_material/Individual/11.5! Enthalpy- Heat of Formation.pdf",
+      "bytes": 411719,
+      "sha256": "535ccfd9a8476e487e904a2ffdc958a495260b30c11f781b028e4d3d81c1e297"
+    },
+    {
+      "path": "chem_material/Individual/11.6! Bond Energy.pdf",
+      "bytes": 192406,
+      "sha256": "68d8550b4183326eb8c75a56fa2b9338d4046f6b91f457f0bc2afc8d9e2c288f"
+    },
+    {
+      "path": "chem_material/Individual/11.E! Thermochemistry- Homework.pdf",
+      "bytes": 121809,
+      "sha256": "2e613996ffc9ac18b907bb80fef3e35988f989a959f9f25eb2d90d6c586a50ed"
+    },
+    {
+      "path": "chem_material/Individual/12! Thermodynamics.pdf",
+      "bytes": 87525,
+      "sha256": "6130935f818c5cc47221b1fc150bcb476b7f9dce15852e5a2f7899a0392a7e02"
+    },
+    {
+      "path": "chem_material/Individual/12.1! Introduction to Spontaneity and Entropy.pdf",
+      "bytes": 3420892,
+      "sha256": "4fbeb92446174380eb78d87aea99d1a9004fc220508ca515dfaee51507a09f52"
+    },
+    {
+      "path": "chem_material/Individual/12.2! The Second and Third Laws of Thermodynamics.pdf",
+      "bytes": 134445,
+      "sha256": "9387c01b03ce26eb9a9fa312d536afc50831800e3d9b71fc53cf69c0269ae77c"
+    },
+    {
+      "path": "chem_material/Individual/12.3! Free Energy.pdf",
+      "bytes": 913178,
+      "sha256": "191657f984af428cd3f3785d171d1ab64902b08c1faaaef6df736aadaa05f18f"
+    },
+    {
+      "path": "chem_material/Individual/12.E! Thermodynamics - Homework.pdf",
+      "bytes": 156279,
+      "sha256": "9d0975839a03c5bc5df06622beabff299fb1ed9fe6b2f56aa250348d4724a63b"
+    },
+    {
+      "path": "chem_material/Individual/13! Appendices.pdf",
+      "bytes": 93786,
+      "sha256": "27c8a71432f5870cb323c469f40119ef1d8adf39b1aeb12770ed700188200d7c"
+    },
+    {
+      "path": "chem_material/Individual/13.1! Dr Martin's Math Minutes.pdf",
+      "bytes": 122207,
+      "sha256": "90ca6469b17fb3bd9cf7907b92d8154fbf7326ea0821f7bd2fd071fd23874b8a"
+    },
+    {
+      "path": "chem_material/Individual/13.2! Composition of Commercial Acids and Bases.pdf",
+      "bytes": 84697,
+      "sha256": "599b6a2ad652f512eccea11f275431aaddaafd738f2ad6b68aa159bda908c9fa"
+    },
+    {
+      "path": "chem_material/Individual/13.3! Essential Mathematics.pdf",
+      "bytes": 309027,
+      "sha256": "e8614468b927e1cee454b44d85ec64e2c984a61bedadb53cc65961b81932d22c"
+    },
+    {
+      "path": "chem_material/Individual/13.4! Fundamental Physical Constants.pdf",
+      "bytes": 90713,
+      "sha256": "2cd3e48edf10a1959296143ff1f2a031766af1868e23ef380f45b8486a508cc4"
+    },
+    {
+      "path": "chem_material/Individual/13.5! Standard Thermodynamic Properties for Selected Substances.pdf",
+      "bytes": 232212,
+      "sha256": "47ec30b1e95c9a6e5073ae9b95e0995e6e205938f51c32f5f6d45b060b9f7ff6"
+    },
+    {
+      "path": "chem_material/Individual/13.6! The Periodic Table.pdf",
+      "bytes": 448597,
+      "sha256": "ca74807f2dd2edc914571b6ebddf1496b6718d1ed5eafaa2be26e14265117582"
+    },
+    {
+      "path": "chem_material/Individual/13.7! Units and Conversion Factors.pdf",
+      "bytes": 100036,
+      "sha256": "968a2edca41e4dbae091e92d9f75c5ae25b0b8e16790647b8159f7289cb8f0d6"
+    },
+    {
+      "path": "chem_material/Individual/13.8! Water Properties.pdf",
+      "bytes": 400609,
+      "sha256": "fe1a91d9fb1dce1a0a1438c3c810cf3e6409ac47f035534e2fd38bcf0a0337dc"
+    },
+    {
+      "path": "chem_material/Individual/2! Atoms, Molecules, and Ions.pdf",
+      "bytes": 92631,
+      "sha256": "c52913d01b02ae386cd534d67975b94601fbc41c174456ec0c96106bc75a02f1"
+    },
+    {
+      "path": "chem_material/Individual/2.1! Atomic Theory.pdf",
+      "bytes": 2593580,
+      "sha256": "a08a8c62bc0bd8ff088b732116bcf59a1b9b18a55bcca36fe54fe55c6a7fc01e"
+    },
+    {
+      "path": "chem_material/Individual/2.2! Atomic Structure, Isotopes, and Atomic Mass.pdf",
+      "bytes": 2853228,
+      "sha256": "d0f0878d4acffae0e9fd239e2cef68ee00dcbeaeacb27f6b9ac6ef826dbb996e"
+    },
+    {
+      "path": "chem_material/Individual/2.3! Chemical Formulas.pdf",
+      "bytes": 4010480,
+      "sha256": "7cafaf007ba66f730bf678aadf23864ac582da15574eb24c3a4dc1cef151c70c"
+    },
+    {
+      "path": "chem_material/Individual/2.E! Atoms, Molecules, and Ions- Homework.pdf",
+      "bytes": 127908,
+      "sha256": "4397cb349615e9931485a410b58eaa9ae2c8fe71c272ffae23e31b73c8cbeafc"
+    },
+    {
+      "path": "chem_material/Individual/3! Composition of Substances and Solutions.pdf",
+      "bytes": 92853,
+      "sha256": "8eb5a9abb7a6126a531dcc9ab78788fd11db2a650a9aa40dd1c2258df155ab48"
+    },
+    {
+      "path": "chem_material/Individual/3.1! Formula Mass and the Mole Concept.pdf",
+      "bytes": 1924631,
+      "sha256": "a3dcc0fcc385552cb479d438da90e255d97b14aad04994c007e3d44214749c8c"
+    },
+    {
+      "path": "chem_material/Individual/3.2! Determining Empirical and Molecular Formulas.pdf",
+      "bytes": 382754,
+      "sha256": "f1ce288703a94df005e7218840ae0c3bbc03f7395ecbec17e547fac6336edcac"
+    },
+    {
+      "path": "chem_material/Individual/3.3! Percent Composition and Molecular Formula.pdf",
+      "bytes": 269756,
+      "sha256": "88a5da8dbe91d8c1e3f2c5feab797584e64e37cefc9897eb4d916741cf4f8aca"
+    },
+    {
+      "path": "chem_material/Individual/3.4! Molarity.pdf",
+      "bytes": 986386,
+      "sha256": "6432ac614715707c9ea1fe97962e07554e401d740d34f2cae8f8b28ce840b380"
+    },
+    {
+      "path": "chem_material/Individual/3.E! Composition of Substances and Solutions- Homework.pdf",
+      "bytes": 120950,
+      "sha256": "806af6f9a4157dad5a164a6e6ed0331ea037700941b0a46445a6041cfe8d2a29"
+    },
+    {
+      "path": "chem_material/Individual/4! Stoichiometry of Chemical Reactions.pdf",
+      "bytes": 100404,
+      "sha256": "7df816305ca4300d1bbc8df4f6644d39b22b9ba4b5f38e236c1455ebdf994dbb"
+    },
+    {
+      "path": "chem_material/Individual/4.1! Writing and Balancing Chemical Equations.pdf",
+      "bytes": 1642001,
+      "sha256": "2235f0ef1fbfd6f71326d536c5b574c9c7cf4a8e8f7e36b467e6c94d0dfadcb4"
+    },
+    {
+      "path": "chem_material/Individual/4.2! Reaction Stoichiometry.pdf",
+      "bytes": 1628969,
+      "sha256": "242f278593a60a3183f1b903e343ec7c46606535413840119e81beb6ad8ef799"
+    },
+    {
+      "path": "chem_material/Individual/4.3! Classifying Chemical Reactions - Precipitation Reactions.pdf",
+      "bytes": 1637108,
+      "sha256": "77aba64fef924d1570b4c575383372e873c5e4da2a64a9e958fbafa294a40651"
+    },
+    {
+      "path": "chem_material/Individual/4.4! Classifying Chemical Reactions - Acid Base Reactions.pdf",
+      "bytes": 2440200,
+      "sha256": "3d36808e96bb3d5e9a032a512b9583cb2330fced4465a23d37af5b63ff1aa8fb"
+    },
+    {
+      "path": "chem_material/Individual/4.5! Classifying Chemical Reactions - Combustion Reactions.pdf",
+      "bytes": 336893,
+      "sha256": "0f1c0627f04172b6b649508b6c115edcaeb12aecfe8703798b7ea5805a60a324"
+    },
+    {
+      "path": "chem_material/Individual/4.E! Stoichiometry of Chemical Reactions- Homework.pdf",
+      "bytes": 154148,
+      "sha256": "06b937602f601e3106f08ac773248cd4057077ae960e33dec21c04fce5c5f192"
+    },
+    {
+      "path": "chem_material/Individual/5! Electronic Structure and Periodic Properties.pdf",
+      "bytes": 93039,
+      "sha256": "15c0253517267cc3fca1c0b359e5e9efbd54c879ef9ec50235dc5810dad86b56"
+    },
+    {
+      "path": "chem_material/Individual/5.1! Light and Atomic Structure.pdf",
+      "bytes": 2998783,
+      "sha256": "c99e9bc7a86deb181b07bbb3cf467d4831014687ef1c5e2fe3cdf3a0b51190ed"
+    },
+    {
+      "path": "chem_material/Individual/5.2! Development of Quantum Theory.pdf",
+      "bytes": 1995459,
+      "sha256": "f09961f804e09063ccf1373a1c0266bc7541e062f24c9d72bcaffa9da3db4db3"
+    },
+    {
+      "path": "chem_material/Individual/5.3! Electronic Structure of Atoms (Electron Configurations).pdf",
+      "bytes": 1906234,
+      "sha256": "1e958525598a469f21dd1f3eb0f628b5d13d7a3b37993bf8cb955885c813745d"
+    },
+    {
+      "path": "chem_material/Individual/5.4! Periodic Variations in Element Properties.pdf",
+      "bytes": 3702256,
+      "sha256": "2503e6296ffb980b84e531ad5c35fb8190b055d47d192e670b988ffdb3ecf0c9"
+    },
+    {
+      "path": "chem_material/Individual/5.E! Electronic Structure and Periodic Properties- Homework.pdf",
+      "bytes": 196834,
+      "sha256": "d3c1138a238dd6e65789ec41e857c5bd2b274df0897eb0c98696a595c66a3326"
+    },
+    {
+      "path": "chem_material/Individual/6! Chemical Bonding and Molecular Geometry.pdf",
+      "bytes": 95664,
+      "sha256": "13f541c9004f1db45c4c2994bd6249b7f8bd3896643c4043f91b4a964666fec9"
+    },
+    {
+      "path": "chem_material/Individual/6.1! Ionic and Covalent Bonding.pdf",
+      "bytes": 2275630,
+      "sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+    },
+    {
+      "path": "chem_material/Individual/6.2! Lewis Symbols and Structures.pdf",
+      "bytes": 1231569,
+      "sha256": "17ace729a39173be2b9ace15dfb34dc410316e8b67c9bf87484032187ed6c0a7"
+    },
+    {
+      "path": "chem_material/Individual/6.3! Formal Charge and Resonance.pdf",
+      "bytes": 398931,
+      "sha256": "e775ef65b38c0e4705dd6badfdda46a6c4f5afe25069271f73ecff564d370081"
+    },
+    {
+      "path": "chem_material/Individual/6.4! Molecular Structure and Polarity.pdf",
+      "bytes": 1951769,
+      "sha256": "586d1c72f2896528ddf16bb67564f4687a8f99fbbd8683ad94ca66ebbf8f5d21"
+    },
+    {
+      "path": "chem_material/Individual/6.5! Intermolecular Forces.pdf",
+      "bytes": 3165623,
+      "sha256": "e546330c3466bc3192fe909abfe8e2af791962246a41e288fd890480f694a602"
+    },
+    {
+      "path": "chem_material/Individual/6.E! Chemical Bonding and Molecular Geometry- Homework.pdf",
+      "bytes": 467905,
+      "sha256": "c1c14933978ace8c7dd1def6b419e8e64b158a4b4f7565baafc14b5806478a39"
+    },
+    {
+      "path": "chem_material/Individual/7! Advanced Theories of Covalent Bonding.pdf",
+      "bytes": 99881,
+      "sha256": "08110d2374b841d66d8078df5cf5a33648a1083307c762382745692627809b77"
+    },
+    {
+      "path": "chem_material/Individual/7.1! Valence Bond Theory and Hybrid Orbitals.pdf",
+      "bytes": 2273495,
+      "sha256": "96c4fb8a4ded5c04e4e2bf8cf092ba87f41a1adfb3c710c6ff2d03364658b3ce"
+    },
+    {
+      "path": "chem_material/Individual/7.2! Multiple Bonds.pdf",
+      "bytes": 559314,
+      "sha256": "542ccfb323e95d41faeee12e1c2ef1ceb5a9cf9d353b7996813aee60205eb26d"
+    },
+    {
+      "path": "chem_material/Individual/7.3! Molecular Orbital Theory.pdf",
+      "bytes": 1791678,
+      "sha256": "e77e598d1f44b3438712d58e0dbac592fbe1faf82deb3d070169301681b48218"
+    },
+    {
+      "path": "chem_material/Individual/7.E! Advanced Theories of Covalent Bonding- Homework.pdf",
+      "bytes": 339312,
+      "sha256": "a03f5548e035b8f907d475952ac4bd4f2a202bc36c59c3a6cfa215bf11691581"
+    },
+    {
+      "path": "chem_material/Individual/8! Kinetics.pdf",
+      "bytes": 87814,
+      "sha256": "56eb227efc2ee97638542c77dc2ac90b489416e292ada6e79016d2b47d9597e2"
+    },
+    {
+      "path": "chem_material/Individual/8.1! Introduction to Chemical Reaction Rates.pdf",
+      "bytes": 3379293,
+      "sha256": "2a3952564a0d310542e4191b836c7becced624294b3fa3eaa21519e863ff3381"
+    },
+    {
+      "path": "chem_material/Individual/8.2! Collision Theory and Reaction Mechanisms.pdf",
+      "bytes": 1308833,
+      "sha256": "694abce89c399f4e7edc377e94ee6a1205551b9dc3e63384176b880e1bbb4f24"
+    },
+    {
+      "path": "chem_material/Individual/8.3! Catalysis.pdf",
+      "bytes": 2323984,
+      "sha256": "5eb946a54a2f8793ef8a9102666ccab35ccab340e482d911fc5d4e3baceffeb4"
+    },
+    {
+      "path": "chem_material/Individual/8.E! Kinetics - Homework.pdf",
+      "bytes": 506797,
+      "sha256": "d5f3d220f8298468d404995fc733f5b3c27ca0ade1b9141b2c94e982e8c7c924"
+    },
+    {
+      "path": "chem_material/Individual/9! Fundamental Equilibrium Concepts.pdf",
+      "bytes": 87511,
+      "sha256": "c0fa90dd16d629e057c3fd12e463aeec3fe60892b16377cef4df38d3f21f76c7"
+    },
+    {
+      "path": "chem_material/Individual/9.1! Chemical Equilibria.pdf",
+      "bytes": 1300824,
+      "sha256": "af3162f3da7985588839d91b2f79a2790bcc41a6c9554c2ba6bcecf432d403c5"
+    },
+    {
+      "path": "chem_material/Individual/9.2! Equilibrium Constants.pdf",
+      "bytes": 1522832,
+      "sha256": "840db28c5a2e94cfa5a77c14bd544710251ee0f13557b09d59735b0afe483913"
+    },
+    {
+      "path": "chem_material/Individual/9.E! Fundamental Equlibrium Concepts - Homework.pdf",
+      "bytes": 121096,
+      "sha256": "6ca345faff2410685481f3bd4d65a7bd6bb852a2e5d9a9b8a8e5ddb1c1dd177d"
+    },
+    {
+      "path": "chem_material/Individual/99999!A Index.pdf",
+      "bytes": 136260,
+      "sha256": "4b52fb44ba98c1b9e8638c166bcbb8916f9c4dc522dcead535cc033bed60b8e2"
+    },
+    {
+      "path": "chem_material/Individual/99999!B Glossary.pdf",
+      "bytes": 20035,
+      "sha256": "c1195e6a2672f8db15ccaf44701f49f2c68337b9ee1ef1dbb7391bb0cd45120a"
+    },
+    {
+      "path": "chem_material/Individual/99999!C Detailed Licensing.pdf",
+      "bytes": 153380,
+      "sha256": "7b52a87a8a69363de5543e48f3b71e2f4cc957a236d207d2d37df7536f3c524f"
+    },
+    {
+      "path": "chem_material/Individual/99999!D Detailed Licensing.pdf",
+      "bytes": 145111,
+      "sha256": "1f18f73f1a6d01548b44abaef2ba7653262c4d522aed0f5ebdc5cd5cef4e2ed5"
+    },
+    {
+      "path": "chem_material/Individual/99999!E Detailed Licensing.pdf",
+      "bytes": 153348,
+      "sha256": "f6ff7eda10b7de1a5c23a40eb52e9610a3dd7bc10f096c0a1b26ea291531cfc4"
+    }
+  ]
+}

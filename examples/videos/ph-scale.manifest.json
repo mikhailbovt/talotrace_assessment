@@ -1,0 +1,684 @@
+{
+  "schema_version": "selected-video-example-v1",
+  "question": "How does the pH scale work?",
+  "video_file": "ph-scale.mp4",
+  "narration_file": "ph-scale.narration.md",
+  "video_job_id": "ac8ab468-c925-4fcc-b3e2-76263e01e3ce",
+  "keyframe_job_id": "00468651-fe4a-4223-9ae3-0056403ef777",
+  "mode": "whiteboard_loop",
+  "renderer": {
+    "blank": {
+      "file": "assets/references/blank_whiteboard.png",
+      "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+      "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+      "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+    },
+    "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+    "draw_frames": 97,
+    "erase_frames": 25,
+    "hand_white_key_blend": 0.03,
+    "hand_white_key_similarity": 0.1,
+    "hand_width_fraction": 0.55,
+    "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+    "name": "keyframe-composite-v1",
+    "new_ltx_generation": false,
+    "provider": "local_ffmpeg"
+  },
+  "settings": {
+    "assembly_profile": {
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "fps": 24,
+      "height": 576,
+      "width": 1024
+    },
+    "hand_reference": {
+      "bytes": 1022426,
+      "filename": "hand_reference.png",
+      "role": "hand_reference",
+      "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+    },
+    "keyframe_settings": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "models": [
+      {
+        "directory": "models/kokoro",
+        "files": [
+          {
+            "bytes": 2351,
+            "path": "config.json",
+            "sha256": null
+          },
+          {
+            "bytes": 327212226,
+            "path": "kokoro-v1_0.pth",
+            "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4"
+          },
+          {
+            "bytes": 523425,
+            "path": "voices/af_heart.pt",
+            "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff"
+          }
+        ],
+        "key": "kokoro",
+        "repo_id": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+      },
+      {
+        "directory": "ComfyUI/models",
+        "files": [
+          {
+            "bytes": 42018190584,
+            "path": "diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors",
+            "sha256": "792a2bad501ca03262c0bc2ce7a2949e85b142ce18e30894aad5bc849c8e7584"
+          },
+          {
+            "bytes": 26263858182,
+            "path": "text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+            "sha256": "ef7243612fdae7a75cb4d5cee9433e81380675fb6c213bd98ae74a9cd16561d1"
+          },
+          {
+            "bytes": 1472223346,
+            "path": "vae/ltx-2.5-video-vae-bf16.safetensors",
+            "sha256": "847e14ca7f3355debca0cea4eaa24ac0fbcdf0061da054ac89ca638a869ddba3"
+          },
+          {
+            "bytes": 364866540,
+            "path": "vae/ltx-2.5-audio-vae-bf16.safetensors",
+            "sha256": "c52733d37f6a7fb7949c3dc0fb468c6cb2169e4d836983a73babb9f0d54837a5"
+          },
+          {
+            "bytes": 8899889568,
+            "path": "loras/ltx-2.5-22b-distilled-lora-450-bf16.safetensors",
+            "sha256": "86370bbf79a9eb4edaa158907e2b48a5188fe4c5dc8ce30c7eb8f2f131a9bbf5"
+          },
+          {
+            "bytes": 995778752,
+            "path": "latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "eb5a71fe4068ee87ccdb1c3aa635e547ca76bd2d30ae20ae889f2c325c0677e8"
+          },
+          {
+            "bytes": 261944000,
+            "path": "latent_upscale_models/ltx-2.5-latent-temporal-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "2bc3300f2b3c3c1834d72164fbf13a3b9fd73e5a741e8a2c3f4035f89a75c3fe"
+          }
+        ],
+        "key": "ltx",
+        "repo_id": "Lightricks/LTX-2.5",
+        "revision": "5e6e71018ee1756ed329b697a7b4aedc934dfce9"
+      },
+      {
+        "directory": "models/msr",
+        "files": [
+          {
+            "bytes": 1308840536,
+            "path": "LTX-2.5-Licon-MSR-V1.safetensors",
+            "sha256": "d45cedd720e5819ccbe200a4b0ae01f7ae0e0d2966d700a24ebd4c7739515d4f"
+          },
+          {
+            "bytes": 72229,
+            "path": "LTX2.5-MSR-sample-workflow.json",
+            "sha256": null
+          }
+        ],
+        "key": "msr",
+        "repo_id": "LiconStudio/LTX-2.5-Multiple-Subject-Reference",
+        "revision": "9a053e6d63e54cd6970b1cda9419f1339457bd8c"
+      }
+    ],
+    "models_sha256": "f910dc55145b0550a63964f0c0a58d12c70824baf8c8fa01bd0079fdd8ae5acb",
+    "narration_review": {
+      "review": {
+        "approval_status": "approved",
+        "approved_by": "root",
+        "keyframe_job_id": "00468651-fe4a-4223-9ae3-0056403ef777",
+        "original_direction_sha256": "f37f0aa4d9321ec66d9a3ac6743daf2d746418b7914e458c908eb450e5301a1a",
+        "scenes": [
+          {
+            "order": 2,
+            "original_narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. Lower pH means more H₃O⁺ and an acidic solution. Higher pH means less H₃O⁺; when hydronium is lower than hydroxide, the solution is basic. Therefore, pH is not a linear ruler.",
+            "replacement_narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. A lower pH means a greater hydronium concentration. A solution is acidic when hydronium concentration is greater than hydroxide concentration, and basic when it is lower. So pH is not a linear ruler.",
+            "source_ids": [
+              "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+              "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+            ]
+          },
+          {
+            "order": 3,
+            "original_narration": "Neutrality is defined by equal hydronium and hydroxide concentrations. In the supplied chart at 25 °C, pure water is marked pH 7 and neutral. The chart classifies solutions with greater hydronium than hydroxide as acidic, and those with less hydronium as basic. Thus, the pH 7 statement here is specifically a 25 °C reference.",
+            "replacement_narration": "Neutrality means equal hydronium and hydroxide concentrations. At twenty-five degrees Celsius, pure water has pH seven and is neutral. This balanced diagram shows equal concentrations of the two ions. The temperature qualification matters: pH seven here is specifically the neutral reference at twenty-five degrees Celsius.",
+            "source_ids": [
+              "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+              "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+            ]
+          },
+          {
+            "order": 4,
+            "original_narration": "Read the table as powers. A solution at pH 3 has a hydronium concentration of 10⁻³ molar, while pH 4 corresponds to 10⁻⁴ molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration in this comparison. Moving toward pH 7 is a substantial concentration change, not one small linear step.",
+            "replacement_narration": "Compare these two hydronium concentrations. At pH three, the concentration is ten to the negative three molar; at pH four, it is ten to the negative four molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration. Equal pH steps do not form a linear concentration scale.",
+            "source_ids": [
+              "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+            ]
+          },
+          {
+            "order": 5,
+            "original_narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. A 0–14 strip is a common display, but it is not a universal bound: the supplied chart also includes pH −1 and pH 15. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+            "replacement_narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. Zero to fourteen is a common display range, not a universal limit: values such as pH minus one and pH fifteen can also occur. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+            "source_ids": [
+              "d609dabc74c0f863b4a9815955237a7878e316eb09b8a7f1be3f6e7a0fe0c207",
+              "668bec5b5a443a19a9c33b8e673a4f7300bbd4e3a5e954b96d71cab3cd852632",
+              "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+            ]
+          }
+        ],
+        "schema_version": "narration-review-v1"
+      },
+      "sha256": "c57b2279550ea070f04e9d1150be2445aace047f0649a81e86a90e615830b6db"
+    },
+    "pipeline_version": "narrated-video-v1",
+    "profile": {
+      "audio_cfg": 7.0,
+      "audio_policy": "kokoro_af_heart_only_no_ltx_audio_no_music",
+      "comfy_revision": "efa6c8f804bff78b46a0fd458ebd2e47bba07a30",
+      "draw_frames": 177,
+      "erase_frames": 73,
+      "fps": 24,
+      "guide_strength": 1.0,
+      "height": 576,
+      "loop_conditioning": "hand_only_msr_pinned_first_latent_end_temporal_guide",
+      "msr_revision": "98941179a82223a0a62219550272b2823b3e3a9c",
+      "msr_strength": 1.0,
+      "reference_frames": "33",
+      "refinement_sigmas": "0.85, 0.725, 0.421875, 0.0",
+      "steps": 30,
+      "timing_policy": "full_scene_narration_with_explicit_keyframe_reading_hold_then_erase",
+      "upscale": 2,
+      "version": "ltx-msr-whiteboard-v2",
+      "video_cfg": 3.0,
+      "width": 1024
+    },
+    "profile_sha256": "f000831004b2d84a01388e41d4e78d8f20ed662014ff3563971c8eca9f56f914",
+    "renderer": {
+      "blank": {
+        "file": "assets/references/blank_whiteboard.png",
+        "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+        "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+        "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+      },
+      "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "hand_white_key_blend": 0.03,
+      "hand_white_key_similarity": 0.1,
+      "hand_width_fraction": 0.55,
+      "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+      "name": "keyframe-composite-v1",
+      "new_ltx_generation": false,
+      "provider": "local_ffmpeg"
+    },
+    "speech_speed": 1.0,
+    "style_anchor": {
+      "bytes": 1530002,
+      "filename": "style_anchor.png",
+      "role": "style_anchor",
+      "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+    },
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    },
+    "voice": "af_heart"
+  },
+  "media_validation": {
+    "audio_codec": "aac",
+    "audio_duration_seconds": 115.583,
+    "audio_source": "complete_kokoro_narration.wav",
+    "audio_streams": 1,
+    "audio_video_duration_delta_seconds": -0.00033299999999769625,
+    "background_music": false,
+    "bytes": 14557462,
+    "decoded_audio_similarity": 0.9999121427536011,
+    "duration_seconds": 115.58333333333333,
+    "expected_pcm_sha256": "53910bc8962b5826c22b35907ee7d32515e6fdea61b0ec442fcf56d98081ea32",
+    "full_decode": "passed",
+    "native_ltx_audio_used": false,
+    "sha256": "3405ae78544d85c57e1bf4f8cb12793d0cff38a9aa673de6a0d5ebd2b3cc1280",
+    "video_codec": "h264",
+    "video_duration_seconds": 115.583333,
+    "video_frames": 2774
+  },
+  "http_download_sha256": "3405ae78544d85c57e1bf4f8cb12793d0cff38a9aa673de6a0d5ebd2b3cc1280",
+  "timeline": {
+    "duration_seconds": 115.58333333333333,
+    "fps": 24,
+    "frames": 2774,
+    "mode": "whiteboard_loop",
+    "scenes": [
+      {
+        "draw_frames": 97,
+        "end_seconds": 21.958333333333332,
+        "erase_frames": 25,
+        "erase_start_seconds": 20.916666666666668,
+        "frames": 527,
+        "narration_sha256": "99f6f3614a4fdcba0b1d700ef11226d7f6a304deab8df90815ddad6ae94176d7",
+        "order": 1,
+        "reading_hold_frames": 405,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 20.916666666666668,
+        "showing_start_seconds": 4.041666666666667,
+        "silence_samples_after_speech": 25400,
+        "speech_end_seconds": 20.9,
+        "speech_samples": 501600,
+        "speech_start_seconds": 0.0,
+        "start_frame": 0,
+        "start_seconds": 0.0
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 45.916666666666664,
+        "erase_frames": 25,
+        "erase_start_seconds": 44.875,
+        "frames": 575,
+        "narration_sha256": "94661f5915e29abfa3c29faf36ae81ec6c2bd3e5912713bfe891ae9e3cf1eec4",
+        "order": 2,
+        "reading_hold_frames": 453,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 44.875,
+        "showing_start_seconds": 26.0,
+        "silence_samples_after_speech": 25400,
+        "speech_end_seconds": 44.858333333333334,
+        "speech_samples": 549600,
+        "speech_start_seconds": 21.958333333333332,
+        "start_frame": 527,
+        "start_seconds": 21.958333333333332
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 69.16666666666667,
+        "erase_frames": 25,
+        "erase_start_seconds": 68.125,
+        "frames": 558,
+        "narration_sha256": "ba6d6299c28a7feb7e5ceb1db5a02d5bc2d2dc48f17dcb1cccf9f5036553f987",
+        "order": 3,
+        "reading_hold_frames": 436,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 68.125,
+        "showing_start_seconds": 49.958333333333336,
+        "silence_samples_after_speech": 25800,
+        "speech_end_seconds": 68.09166666666667,
+        "speech_samples": 532200,
+        "speech_start_seconds": 45.916666666666664,
+        "start_frame": 1102,
+        "start_seconds": 45.916666666666664
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 91.20833333333333,
+        "erase_frames": 25,
+        "erase_start_seconds": 90.16666666666667,
+        "frames": 529,
+        "narration_sha256": "367ef78fef88f1345fe45c8f4a786f9c4c5d9ae82b09d6e7a19b62e6ab5199ad",
+        "order": 4,
+        "reading_hold_frames": 407,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 90.16666666666667,
+        "showing_start_seconds": 73.20833333333333,
+        "silence_samples_after_speech": 25000,
+        "speech_end_seconds": 90.16666666666667,
+        "speech_samples": 504000,
+        "speech_start_seconds": 69.16666666666667,
+        "start_frame": 1660,
+        "start_seconds": 69.16666666666667
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 115.58333333333333,
+        "erase_frames": 25,
+        "erase_start_seconds": 114.54166666666667,
+        "frames": 585,
+        "narration_sha256": "b5f44f04f38c4248090dc44f5968fe8946d3b9452a24abe3dacec58b79bccb50",
+        "order": 5,
+        "reading_hold_frames": 463,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 114.54166666666667,
+        "showing_start_seconds": 95.25,
+        "silence_samples_after_speech": 25200,
+        "speech_end_seconds": 114.53333333333333,
+        "speech_samples": 559800,
+        "speech_start_seconds": 91.20833333333333,
+        "start_frame": 2189,
+        "start_seconds": 91.20833333333333
+      }
+    ],
+    "speech_alignment": "current_scene_drawing_and_showing_then_silent_erasing",
+    "speech_samples": 2647200,
+    "speech_speed": 1.0,
+    "timing_basis": "measured_kokoro_samples",
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    }
+  },
+  "narration": [
+    {
+      "order": 1,
+      "title": "What pH Measures",
+      "narration": "pH tells us about the molar concentration of hydronium ions in an aqueous solution. The definition is pH equals negative log, base ten, of hydronium concentration. The brackets mean concentration. So pH is not a direct concentration number; it is a compact logarithmic way to report it.",
+      "narration_sha256": "99f6f3614a4fdcba0b1d700ef11226d7f6a304deab8df90815ddad6ae94176d7",
+      "source_ids": [
+        "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Why the Scale Is Logarithmic",
+      "narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. A lower pH means a greater hydronium concentration. A solution is acidic when hydronium concentration is greater than hydroxide concentration, and basic when it is lower. So pH is not a linear ruler.",
+      "narration_sha256": "94661f5915e29abfa3c29faf36ae81ec6c2bd3e5912713bfe891ae9e3cf1eec4",
+      "source_ids": [
+        "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+        "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Neutral at 25 °C",
+      "narration": "Neutrality means equal hydronium and hydroxide concentrations. At twenty-five degrees Celsius, pure water has pH seven and is neutral. This balanced diagram shows equal concentrations of the two ions. The temperature qualification matters: pH seven here is specifically the neutral reference at twenty-five degrees Celsius.",
+      "narration_sha256": "ba6d6299c28a7feb7e5ceb1db5a02d5bc2d2dc48f17dcb1cccf9f5036553f987",
+      "source_ids": [
+        "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+        "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Reading One pH Step",
+      "narration": "Compare these two hydronium concentrations. At pH three, the concentration is ten to the negative three molar; at pH four, it is ten to the negative four molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration. Equal pH steps do not form a linear concentration scale.",
+      "narration_sha256": "367ef78fef88f1345fe45c8f4a786f9c4c5d9ae82b09d6e7a19b62e6ab5199ad",
+      "source_ids": [
+        "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "How pH Is Displayed and Measured",
+      "narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. Zero to fourteen is a common display range, not a universal limit: values such as pH minus one and pH fifteen can also occur. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+      "narration_sha256": "b5f44f04f38c4248090dc44f5968fe8946d3b9452a24abe3dacec58b79bccb50",
+      "source_ids": [
+        "d609dabc74c0f863b4a9815955237a7878e316eb09b8a7f1be3f6e7a0fe0c207",
+        "668bec5b5a443a19a9c33b8e673a4f7300bbd4e3a5e954b96d71cab3cd852632",
+        "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+      ]
+    }
+  ],
+  "narration_review": {
+    "effective_scene_scripts": [
+      {
+        "narration": "pH tells us about the molar concentration of hydronium ions in an aqueous solution. The definition is pH equals negative log, base ten, of hydronium concentration. The brackets mean concentration. So pH is not a direct concentration number; it is a compact logarithmic way to report it.",
+        "order": 1
+      },
+      {
+        "narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. A lower pH means a greater hydronium concentration. A solution is acidic when hydronium concentration is greater than hydroxide concentration, and basic when it is lower. So pH is not a linear ruler.",
+        "order": 2
+      },
+      {
+        "narration": "Neutrality means equal hydronium and hydroxide concentrations. At twenty-five degrees Celsius, pure water has pH seven and is neutral. This balanced diagram shows equal concentrations of the two ions. The temperature qualification matters: pH seven here is specifically the neutral reference at twenty-five degrees Celsius.",
+        "order": 3
+      },
+      {
+        "narration": "Compare these two hydronium concentrations. At pH three, the concentration is ten to the negative three molar; at pH four, it is ten to the negative four molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration. Equal pH steps do not form a linear concentration scale.",
+        "order": 4
+      },
+      {
+        "narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. Zero to fourteen is a common display range, not a universal limit: values such as pH minus one and pH fifteen can also occur. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+        "order": 5
+      }
+    ],
+    "narration_corrections": [
+      {
+        "order": 2,
+        "original_narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. Lower pH means more H₃O⁺ and an acidic solution. Higher pH means less H₃O⁺; when hydronium is lower than hydroxide, the solution is basic. Therefore, pH is not a linear ruler.",
+        "replacement_narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. A lower pH means a greater hydronium concentration. A solution is acidic when hydronium concentration is greater than hydroxide concentration, and basic when it is lower. So pH is not a linear ruler.",
+        "source_ids": [
+          "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 3,
+        "original_narration": "Neutrality is defined by equal hydronium and hydroxide concentrations. In the supplied chart at 25 °C, pure water is marked pH 7 and neutral. The chart classifies solutions with greater hydronium than hydroxide as acidic, and those with less hydronium as basic. Thus, the pH 7 statement here is specifically a 25 °C reference.",
+        "replacement_narration": "Neutrality means equal hydronium and hydroxide concentrations. At twenty-five degrees Celsius, pure water has pH seven and is neutral. This balanced diagram shows equal concentrations of the two ions. The temperature qualification matters: pH seven here is specifically the neutral reference at twenty-five degrees Celsius.",
+        "source_ids": [
+          "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 4,
+        "original_narration": "Read the table as powers. A solution at pH 3 has a hydronium concentration of 10⁻³ molar, while pH 4 corresponds to 10⁻⁴ molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration in this comparison. Moving toward pH 7 is a substantial concentration change, not one small linear step.",
+        "replacement_narration": "Compare these two hydronium concentrations. At pH three, the concentration is ten to the negative three molar; at pH four, it is ten to the negative four molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration. Equal pH steps do not form a linear concentration scale.",
+        "source_ids": [
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 5,
+        "original_narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. A 0–14 strip is a common display, but it is not a universal bound: the supplied chart also includes pH −1 and pH 15. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+        "replacement_narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. Zero to fourteen is a common display range, not a universal limit: values such as pH minus one and pH fifteen can also occur. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+        "source_ids": [
+          "d609dabc74c0f863b4a9815955237a7878e316eb09b8a7f1be3f6e7a0fe0c207",
+          "668bec5b5a443a19a9c33b8e673a4f7300bbd4e3a5e954b96d71cab3cd852632",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      }
+    ],
+    "original_direction_sha256": "f37f0aa4d9321ec66d9a3ac6743daf2d746418b7914e458c908eb450e5301a1a",
+    "original_scene_scripts": [
+      {
+        "narration": "pH tells us about the molar concentration of hydronium ions in an aqueous solution. The definition is pH equals negative log, base ten, of hydronium concentration. The brackets mean concentration. So pH is not a direct concentration number; it is a compact logarithmic way to report it.",
+        "order": 1
+      },
+      {
+        "narration": "Because the scale is logarithmic, equal steps in pH represent equal powers of ten in hydronium concentration. Lower pH means more H₃O⁺ and an acidic solution. Higher pH means less H₃O⁺; when hydronium is lower than hydroxide, the solution is basic. Therefore, pH is not a linear ruler.",
+        "order": 2
+      },
+      {
+        "narration": "Neutrality is defined by equal hydronium and hydroxide concentrations. In the supplied chart at 25 °C, pure water is marked pH 7 and neutral. The chart classifies solutions with greater hydronium than hydroxide as acidic, and those with less hydronium as basic. Thus, the pH 7 statement here is specifically a 25 °C reference.",
+        "order": 3
+      },
+      {
+        "narration": "Read the table as powers. A solution at pH 3 has a hydronium concentration of 10⁻³ molar, while pH 4 corresponds to 10⁻⁴ molar. Increasing pH by one therefore means a tenfold decrease in hydronium concentration in this comparison. Moving toward pH 7 is a substantial concentration change, not one small linear step.",
+        "order": 4
+      },
+      {
+        "narration": "Finally, pH can be measured directly with a pH meter, or visually estimated with colored indicators and pH paper. A 0–14 strip is a common display, but it is not a universal bound: the supplied chart also includes pH −1 and pH 15. The core rule remains unchanged: lower pH means greater hydronium concentration.",
+        "order": 5
+      }
+    ],
+    "review_sha256": "c57b2279550ea070f04e9d1150be2445aace047f0649a81e86a90e615830b6db"
+  },
+  "selection_review": {
+    "job_id": "ac8ab468-c925-4fcc-b3e2-76263e01e3ce",
+    "status": "accepted",
+    "reviewer": "root",
+    "scope": "Representative reveal, showing and erase frames from all five scenes in the canonical final MP4. Final sheets are byte-identical to the reviewed assembled previews. All complete Kokoro scripts, final AAC similarity and HTTP download checks passed.",
+    "contact_sheet": "data/tests/final-composite-review-v1/ph-all-scenes.png",
+    "criteria": "Functional blank/drawing/showing/erase sequence, clear diagrams and labels, full scene-aligned narration; exact stroke physics is not required.",
+    "video_sha256": "3405ae78544d85c57e1bf4f8cb12793d0cff38a9aa673de6a0d5ebd2b3cc1280"
+  },
+  "provenance": {
+    "generation_manifest_sha256": "9f6257c6490b3129dae449d27ca1e3b16cb5f6ac3842d3e42bf136d9fe3e51e0",
+    "source_snapshot_sha256": "d5c4d4935fd57b38f589c41e96e88b43116448a75a06f23d8e8a1a728b27c9da",
+    "corpus_id": "5ca36c3eb893c60ad909db9776e60714f6bdd1d5f1cc76a8ce56aa5d4e1278e7",
+    "models": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "keyframes": [
+      {
+        "order": 1,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2607961,
+          "height": 1152,
+          "sha256": "cd9c50786853828b05f1aa5931a9ba9d6638c2fe02b6ae0ec494942074129381",
+          "width": 2048
+        },
+        "source_ids": [
+          "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d"
+        ]
+      },
+      {
+        "order": 2,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2459120,
+          "height": 1152,
+          "sha256": "d57c5d85337f8a7c88c9ae13915fd52c7da6f689009f5f51293ae870214075dd",
+          "width": 2048
+        },
+        "source_ids": [
+          "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 3,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2558703,
+          "height": 1152,
+          "sha256": "fc298dd5099bb04ddc81d28ab8dfcab91171052a2c05e484e9873b9568dd17c0",
+          "width": 2048
+        },
+        "source_ids": [
+          "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 4,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2649742,
+          "height": 1152,
+          "sha256": "479201de6c1cd9425b10ae2b5acefe32236e068fa1e85a22f69ec87062a9ea73",
+          "width": 2048
+        },
+        "source_ids": [
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      },
+      {
+        "order": 5,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2754354,
+          "height": 1152,
+          "sha256": "05f834e32459e24328d6aad43f38058c61c0807aa9304de4826d97165cdf40af",
+          "width": 2048
+        },
+        "source_ids": [
+          "d609dabc74c0f863b4a9815955237a7878e316eb09b8a7f1be3f6e7a0fe0c207",
+          "668bec5b5a443a19a9c33b8e673a4f7300bbd4e3a5e954b96d71cab3cd852632",
+          "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "id": "89739e340842ba0f31a418b3a573d0d0ec2fcd50bd16efa9314f680161be4645",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=2",
+        "page_number": 2,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "3f7dde8a3cfba88d464e0f036ee5ab2ca2702e2a975e9c5d2a9ba4cb6d50466c",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=2",
+        "page_number": 2,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "91ab84e79172a0c2e9b4bbb12167575ce8c068a64697f562169361ca96c2cd7d",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "7a8226a33109738fd7f9dc98161f6810b9a9047e2540896b6a76d0ccfe9cb12b",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=4",
+        "page_number": 4,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "d609dabc74c0f863b4a9815955237a7878e316eb09b8a7f1be3f6e7a0fe0c207",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=5",
+        "page_number": 5,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "38456e39a8df090c766b5ece19c61e44baadba3e824c5513b8e3ec4e6b1d7152",
+        "title": "10.4:  Buffers",
+        "citation": "Individual/10.4! Buffers.pdf#page=7",
+        "page_number": 7,
+        "file_sha256": "10812d88910806a7470b4e83419f61369385f778e5526129d03383c2fe9c56cd"
+      },
+      {
+        "id": "3bbb91da9e4317c05d3bae9c13cd4e647045c2c1b4b74a1bd4371d933d1db385",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=3",
+        "page_number": 3,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      },
+      {
+        "id": "668bec5b5a443a19a9c33b8e673a4f7300bbd4e3a5e954b96d71cab3cd852632",
+        "title": "10.2:  pH, pOH, and Relative Strengths of Acids and Bases",
+        "citation": "Individual/10.2! pH, pOH, and Relative Strengths of Acids and Bases.pdf#page=6",
+        "page_number": 6,
+        "file_sha256": "18f52a027b211a0a1227d80af2df2bd6b68d7fc337df223430cca3f74c26ed4a"
+      }
+    ],
+    "original_test_artifacts": "data/tests/ac8ab468-c925-4fcc-b3e2-76263e01e3ce",
+    "api_acceptance_artifacts": "data/tests/final-composite-ph-v1"
+  }
+}

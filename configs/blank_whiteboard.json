@@ -1,0 +1,16 @@
+{
+  "approval_status": "approved",
+  "approved_by": "root",
+  "image": "assets/references/blank_whiteboard.png",
+  "image_sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f",
+  "provider_receipt": "configs/blank_whiteboard.receipt.json",
+  "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+  "schema_version": "blank-whiteboard-v1",
+  "source_provenance": {
+    "model": "gpt-image-2",
+    "note": "Runtime reference promoted from the reviewed clean blank; original experiment images and receipts remain under data/tests.",
+    "source_keyframe_job_id": "00468651-fe4a-4223-9ae3-0056403ef777",
+    "source_keyframe_sha256": "cd9c50786853828b05f1aa5931a9ba9d6638c2fe02b6ae0ec494942074129381",
+    "source_scene_order": 1
+  }
+}

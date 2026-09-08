@@ -1,0 +1,42 @@
+{
+  "primary_extractor_version": "1.18.0",
+  "reviews": [
+    {
+      "source_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769",
+      "physical_page": 7,
+      "action": "vision",
+      "reason": "reviewed_native_math_runs_interleaved_into_prose",
+      "evidence": "Section 6.1 PDF page 7: native output interleaves polyatomic-ion math into words such as combinNinO and cNovOalent; pypdf retains the surrounding prose in order. Original native output is retained in page provenance. Mathematical expressions still require source verification."
+    },
+    {
+      "source_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769",
+      "physical_page": 4,
+      "action": "warning",
+      "reason": "source_unit_inconsistency",
+      "evidence": "The original graph visibly pairs a minimum labeled 0.74 with an axis labeled Internuclear distance (pm). Independent visual review confirmed that Luna faithfully transcribed these labels. NIST's H2 ground-state table reports r_e = 0.74144 angstrom (74.144 pm). Preserve the literal source transcription; do not use 0.74 pm as the hydrogen bond length.",
+      "reference_url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Mask=1000",
+      "downstream_constraint": "Do not present 0.74 pm as the H2 bond length. Omit the numeric graph label unless separately verified; retain qualitative potential-energy explanation."
+    },
+    {
+      "source_sha256": "88a5da8dbe91d8c1e3f2c5feab797584e64e37cefc9897eb4d916741cf4f8aca",
+      "physical_page": 1,
+      "action": "vision",
+      "reason": "reviewed_reference_interleaving",
+      "evidence": "Native figure credit contains F3r.e3q.3 with the figure number interleaved into the name. Route through visual transcription; never repair tokens heuristically."
+    },
+    {
+      "source_sha256": "586d1c72f2896528ddf16bb67564f4687a8f99fbbd8683ad94ca66ebbf8f5d21",
+      "physical_page": 11,
+      "action": "vision",
+      "reason": "reviewed_reference_interleaving",
+      "evidence": "Native prose contains 6.e4.d1e3te*A*rmine and sh6o.4w.s13th*B*at. The diagnostic matcher missed these reference digits interleaved with words and emphasis markers."
+    },
+    {
+      "source_sha256": "2a3952564a0d310542e4191b836c7becced624294b3fa3eaa21519e863ff3381",
+      "physical_page": 5,
+      "action": "vision",
+      "reason": "reviewed_reference_interleaving",
+      "evidence": "Native formula/caption contains 2F8e.C1l.3 with figure-reference digits mixed into chemical symbols; do not infer or rewrite the intended chemistry from this text."
+    }
+  ]
+}

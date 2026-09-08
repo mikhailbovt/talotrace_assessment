@@ -1,0 +1,17 @@
+{
+  "pod_id": "b9ue19vhypgn1a",
+  "name": "talotrace-chemistry-a100",
+  "gpu": "NVIDIA A100 SXM 80GB",
+  "gpu_count": 1,
+  "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+  "container_disk_gb": 50,
+  "volume_disk_gb": 250,
+  "quoted_running_usd_per_hour": 1.63,
+  "quoted_stopped_storage_usd_per_hour": 0.069,
+  "ssh_host": "216.81.245.138",
+  "ssh_port": 13396,
+  "remote_root": "/workspace/talotrace",
+  "comfyui_remote_port": 8188,
+  "kokoro_remote_port": 8085,
+  "note": "Connection details can change after stop/start; recheck in RunPod. No public inference HTTP ports."
+}

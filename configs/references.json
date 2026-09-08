@@ -1,0 +1,17 @@
+{
+  "root": ".",
+  "files": [
+    {
+      "path": "assets/references/hand_reference.png",
+      "bytes": 1022426,
+      "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587",
+      "original_path": "for_images/hand_reference.png"
+    },
+    {
+      "path": "assets/references/style_anchor.png",
+      "bytes": 1530002,
+      "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a",
+      "original_path": "for_images/style_anchor.png"
+    }
+  ]
+}
