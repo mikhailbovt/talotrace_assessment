@@ -58,6 +58,7 @@ every newly generated diagram.
 
 Composition preserves approved diagrams and avoids repeated GPU sampling costs. Fresh jobs
 pay for embeddings, direction, images and hosting; receipts retain usage/model identities.
+The measured five-keyframe pH run is estimated at [about $1.25](costs.md), including allocated pod time.
 Cached resumes reuse completed assets. A lost response after billing can still cause a charged
 retry; exactly-once external billing is not guaranteed. Other STEM topics can replace the corpus
 and direction prompts while retaining the job, artifact and renderer contracts.

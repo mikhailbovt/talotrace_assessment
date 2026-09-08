@@ -85,6 +85,16 @@ status stream does not cancel generation. Resume reuses valid artifacts, with at
 attempts. Details: [video API](docs/video-api.md), [keyframe API](docs/keyframe-api.md),
 [live status](docs/job-status.md).
 
+## Cost
+
+Approximately **$1.25 per 2:11 lesson** in the measured five-keyframe pH run: **$0.92** for
+five high-quality 2048×1152 images, **$0.013** for direction, and **$0.31** for 11.55 minutes
+of the session's $1.63/hour RunPod hosting. The question embedding was cached ($0 this run).
+This uses the local composite renderer and Kokoro, with no LTX inference. It is a usage-based
+estimate, excluding one-time corpus/model setup, retries, idle hosting outside the job and
+local CPU/database costs. More frames or fresh retries increase cost; valid cached assets
+avoid repeated model calls. [Calculation and pricing sources](docs/costs.md).
+
 ## Tests
 
 ```powershell

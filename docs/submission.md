@@ -106,9 +106,9 @@ are recorded runs. All 30 cached speech/clip files per resumed job stayed unchan
   is not claimed to be byte-identical or automatically scientifically approved.
 - Final examples use exact generated diagrams plus a local reveal/hand/wipe effect. LTX remains
   selectable. This preserves labels and lowers repeated generation cost.
-- Explain cost as separate one-time corpus preparation, new question/direction/image calls,
-  and runtime hosting. Use saved provider usage and account billing for actual dollar amounts.
-  A precise per-video dollar total has not been established; do not present an invented estimate.
+- The measured five-keyframe pH run is estimated at [about $1.25](costs.md), using saved API
+  usage and allocated hosting time. This excludes one-time corpus/model setup, earlier
+  experiments, local infrastructure and idle hosting outside the job; it is not an invoice total.
   Cached reuse avoids new image calls, but a running cloud pod still has hosting costs.
 
 ## Handoff checklist
@@ -123,7 +123,7 @@ are recorded runs. All 30 cached speech/clip files per resumed job stayed unchan
 | GitHub repository link and reviewer read access | Remote is configured; publish changes and verify access for all three reviewers. |
 | ZIP containing the work | Package the source, documentation and selected examples, excluding credentials, caches and model weights. |
 | Google Drive link to full-screen/face work recording | Recording coverage is author-reported; upload the actual recording and state that later polishing happened afterward. |
-| Rough per-artifact cost explanation | Usage/provenance is saved; reconcile provider pricing/billing before quoting a total. |
+| Rough per-artifact cost explanation | [Cost calculation](costs.md): approximately $1.25 for the measured five-keyframe pH run. |
 
 Send the code link, ZIP, API walkthrough link and Google Drive recording link to **careers@growtrics.ai**,
 with **praveen.k@growtrics.ai** and **wayne.le@growtrics.ai** in CC. The PDF asks that all three
