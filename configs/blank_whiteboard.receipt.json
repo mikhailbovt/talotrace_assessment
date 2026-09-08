@@ -1,0 +1,52 @@
+{
+  "image": {
+    "bytes": 2491380,
+    "height": 1152,
+    "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f",
+    "width": 2048
+  },
+  "input_sha256": "65edcdb1545d3b990f9c6227162695bad156031a97e76fb5ebc4c4b56c3e8055",
+  "model": "gpt-image-2",
+  "phase": "blank",
+  "preparation_script_sha256": "a9bfea0120bcf5ef50100c497cecd0337a9a03a7b2a699a645071e1c61b9d16c",
+  "prompt": "Use case: precise-object-edit.\nAsset: matched empty-board construction guide, landscape 2048x1152.\nImage 1 is the accepted final chemistry keyframe and the exact composition to preserve.\nImage 2 is the original artistic style reference only; do not copy any of its content.\nEdit image 1 by removing EVERY drawn mark from inside its white board: remove the entire beaker,\nall outlines, water and blue fill, all ions, the full formula, all labels, the brace, and all yellow highlight.\nReplace only those removed marks with the same subtle white/off-white board surface already visible\nin the source. Preserve the dark outer frame, its exact position and thickness, all four inner board\nedges, crop, camera position, landscape proportions, lighting and unobstructed surface appearance.\nThe result is the SAME board, completely empty inside its existing border. Do not redesign it,\nbrighten it into a pure-white borderless canvas, add texture, cast shadows, hands, objects, text,\nwatermarks or decorative marks. Do not leave faint ghosts of the erased content.",
+  "prompt_sha256": "a61025992d05b5130ced73e7cb451259598b46911ad797a3bdd2b3cc7e7de007",
+  "references": [
+    {
+      "bytes": 2607961,
+      "filename": "scene-01.png",
+      "role": "accepted_source",
+      "sha256": "cd9c50786853828b05f1aa5931a9ba9d6638c2fe02b6ae0ec494942074129381"
+    },
+    {
+      "bytes": 1530002,
+      "filename": "style_anchor.png",
+      "role": "style_anchor",
+      "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+    }
+  ],
+  "request_id": "req_da506c5d4ce24917bdf568b4cc1e16cb",
+  "review_status": "pending_visual_review",
+  "revised_prompt": null,
+  "settings": {
+    "background": "opaque",
+    "n": 1,
+    "output_format": "png",
+    "quality": "high",
+    "size": "2048x1152"
+  },
+  "source_keyframe_sha256": "cd9c50786853828b05f1aa5931a9ba9d6638c2fe02b6ae0ec494942074129381",
+  "usage": {
+    "input_tokens": 3242,
+    "input_tokens_details": {
+      "image_tokens": 3016,
+      "text_tokens": 226
+    },
+    "output_tokens": 5650,
+    "output_tokens_details": {
+      "image_tokens": 5650,
+      "text_tokens": 0
+    },
+    "total_tokens": 8892
+  }
+}

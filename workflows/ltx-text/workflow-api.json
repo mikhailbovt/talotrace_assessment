@@ -1,0 +1,379 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "ltx-2.5-22b-dev-transformer-bf16.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "2": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "type": "ltxv",
+      "device": "default"
+    }
+  },
+  "3": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ltx-2.5-video-vae-bf16.safetensors"
+    }
+  },
+  "4": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "ltx-2.5-audio-vae-bf16.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "A clean educational whiteboard animation, a locked front-facing camera showing a bright white matte board. Thin, crisp black marker lines and two accent colors, red and blue. No person, no hand, no photorealistic objects, no camera movement. The animation is a simple symbolic diagram of a hydrogen covalent bond, not a literal view of electrons.\n\nAt the beginning two large black capital H symbols stand well apart on the left and right. One small red electron dot sits just to the right of the left H, and one small blue electron dot sits just to the left of the right H. There are exactly two H symbols and exactly two colored electron dots. During the first two seconds both H symbols glide slowly toward the middle while the two dots approach the space between them. During the next two seconds the two colored dots settle vertically aligned, midway between the two H symbols, illustrating one shared electron pair. The final second holds this clear H : H Lewis diagram perfectly still. The two H symbols remain separate throughout, the dots remain visible, and no additional marks appear. Spacious composition, generous white margins, perfectly even lighting, a single continuous shot. The only sound is a faint dry marker-on-board sound during movement and quiet room tone during the final hold. No music, speech, or narration.\n"
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": "blurry, distorted letters, extra letters, extra dots, disappearing dots, unreadable text, busy background, flickering, camera movement, hands, people, photorealism, 3D rendering, subtitles, speech, music"
+    }
+  },
+  "7": {
+    "class_type": "LTXVConditioning",
+    "inputs": {
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "6",
+        0
+      ],
+      "frame_rate": 24.0
+    }
+  },
+  "8": {
+    "class_type": "EmptyLTXVLatentVideo",
+    "inputs": {
+      "width": 960,
+      "height": 544,
+      "length": 121,
+      "batch_size": 1
+    }
+  },
+  "9": {
+    "class_type": "LTXVEmptyLatentAudio",
+    "inputs": {
+      "frames_number": 121,
+      "frame_rate": 24.0,
+      "batch_size": 1,
+      "audio_vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "10": {
+    "class_type": "LTXVConcatAVLatent",
+    "inputs": {
+      "video_latent": [
+        "8",
+        0
+      ],
+      "audio_latent": [
+        "9",
+        0
+      ]
+    }
+  },
+  "11": {
+    "class_type": "LTXVSpatioTemporalGuidance",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "scale": 1.0,
+      "blocks": "28",
+      "start_percent": 0.0,
+      "end_percent": 1.0
+    }
+  },
+  "12": {
+    "class_type": "LTXVModalityGuidance",
+    "inputs": {
+      "model": [
+        "11",
+        0
+      ],
+      "modality_scale": 3.0,
+      "start_percent": 0.0,
+      "end_percent": 1.0
+    }
+  },
+  "13": {
+    "class_type": "LTXVDualCFGGuider",
+    "inputs": {
+      "model": [
+        "12",
+        0
+      ],
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "7",
+        1
+      ],
+      "video_cfg": 3.0,
+      "audio_cfg": 7.0
+    }
+  },
+  "14": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 20260908
+    }
+  },
+  "15": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    }
+  },
+  "16": {
+    "class_type": "LTXVScheduler",
+    "inputs": {
+      "steps": 30,
+      "max_shift": 2.05,
+      "base_shift": 0.95,
+      "stretch": true,
+      "terminal": 0.1,
+      "latent": [
+        "8",
+        0
+      ]
+    }
+  },
+  "17": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "14",
+        0
+      ],
+      "guider": [
+        "13",
+        0
+      ],
+      "sampler": [
+        "15",
+        0
+      ],
+      "sigmas": [
+        "16",
+        0
+      ],
+      "latent_image": [
+        "10",
+        0
+      ]
+    }
+  },
+  "18": {
+    "class_type": "LTXVSeparateAVLatent",
+    "inputs": {
+      "av_latent": [
+        "17",
+        0
+      ]
+    }
+  },
+  "19": {
+    "class_type": "LatentUpscaleModelLoader",
+    "inputs": {
+      "model_name": "ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors"
+    }
+  },
+  "20": {
+    "class_type": "LTXVLatentUpsampler",
+    "inputs": {
+      "samples": [
+        "18",
+        0
+      ],
+      "upscale_model": [
+        "19",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    }
+  },
+  "21": {
+    "class_type": "LTXVConcatAVLatent",
+    "inputs": {
+      "video_latent": [
+        "20",
+        0
+      ],
+      "audio_latent": [
+        "18",
+        1
+      ]
+    }
+  },
+  "22": {
+    "class_type": "LoraLoaderModelOnly",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "lora_name": "ltx-2.5-22b-distilled-lora-450-bf16.safetensors",
+      "strength_model": 1.0
+    }
+  },
+  "23": {
+    "class_type": "LTXVDualCFGGuider",
+    "inputs": {
+      "model": [
+        "22",
+        0
+      ],
+      "positive": [
+        "7",
+        0
+      ],
+      "negative": [
+        "7",
+        1
+      ],
+      "video_cfg": 1.0,
+      "audio_cfg": 1.0
+    }
+  },
+  "24": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 20260909
+    }
+  },
+  "25": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler_ancestral"
+    }
+  },
+  "26": {
+    "class_type": "ManualSigmas",
+    "inputs": {
+      "sigmas": "0.85, 0.725, 0.421875, 0.0"
+    }
+  },
+  "27": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "24",
+        0
+      ],
+      "guider": [
+        "23",
+        0
+      ],
+      "sampler": [
+        "25",
+        0
+      ],
+      "sigmas": [
+        "26",
+        0
+      ],
+      "latent_image": [
+        "21",
+        0
+      ]
+    }
+  },
+  "28": {
+    "class_type": "LTXVSeparateAVLatent",
+    "inputs": {
+      "av_latent": [
+        "27",
+        0
+      ]
+    }
+  },
+  "29": {
+    "class_type": "VAEDecodeTiled",
+    "inputs": {
+      "samples": [
+        "28",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "tile_size": 512,
+      "overlap": 64,
+      "temporal_size": 64,
+      "temporal_overlap": 16
+    }
+  },
+  "30": {
+    "class_type": "LTXVAudioVAEDecode",
+    "inputs": {
+      "samples": [
+        "28",
+        1
+      ],
+      "audio_vae": [
+        "4",
+        0
+      ]
+    }
+  },
+  "31": {
+    "class_type": "CreateVideo",
+    "inputs": {
+      "images": [
+        "29",
+        0
+      ],
+      "fps": 24.0,
+      "audio": [
+        "30",
+        0
+      ],
+      "bit_depth": 8,
+      "color_space": "sRGB"
+    }
+  },
+  "32": {
+    "class_type": "SaveVideo",
+    "inputs": {
+      "video": [
+        "31",
+        0
+      ],
+      "filename_prefix": "tests/ltx-text/20260908-text-bf16/hydrogen",
+      "format": "mp4",
+      "format.codec": "h264",
+      "format.codec.encoding": "re-encode",
+      "format.codec.encoding.crf": 18
+    }
+  }
+}

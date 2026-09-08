@@ -1,0 +1,21 @@
+{
+  "version": "ltx-msr-whiteboard-v2",
+  "comfy_revision": "efa6c8f804bff78b46a0fd458ebd2e47bba07a30",
+  "msr_revision": "98941179a82223a0a62219550272b2823b3e3a9c",
+  "width": 1024,
+  "height": 576,
+  "upscale": 2,
+  "fps": 24,
+  "draw_frames": 177,
+  "erase_frames": 73,
+  "steps": 30,
+  "video_cfg": 3.0,
+  "audio_cfg": 7.0,
+  "msr_strength": 1.0,
+  "guide_strength": 1.0,
+  "refinement_sigmas": "0.85, 0.725, 0.421875, 0.0",
+  "reference_frames": "33",
+  "timing_policy": "full_scene_narration_with_explicit_keyframe_reading_hold_then_erase",
+  "audio_policy": "kokoro_af_heart_only_no_ltx_audio_no_music",
+  "loop_conditioning": "hand_only_msr_pinned_first_latent_end_temporal_guide"
+}

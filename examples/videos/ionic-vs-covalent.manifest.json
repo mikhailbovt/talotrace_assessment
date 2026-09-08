@@ -1,0 +1,602 @@
+{
+  "schema_version": "selected-video-example-v1",
+  "question": "What is the difference between ionic and covalent bonding?",
+  "video_file": "ionic-vs-covalent.mp4",
+  "narration_file": "ionic-vs-covalent.narration.md",
+  "video_job_id": "3fe9b204-f51b-450d-a59f-2eb65aedf695",
+  "keyframe_job_id": "f3bcd500-0133-4b26-9403-2d0c58a54b10",
+  "mode": "whiteboard_loop",
+  "renderer": {
+    "blank": {
+      "file": "assets/references/blank_whiteboard.png",
+      "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+      "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+      "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+    },
+    "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+    "draw_frames": 97,
+    "erase_frames": 25,
+    "hand_white_key_blend": 0.03,
+    "hand_white_key_similarity": 0.1,
+    "hand_width_fraction": 0.55,
+    "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+    "name": "keyframe-composite-v1",
+    "new_ltx_generation": false,
+    "provider": "local_ffmpeg"
+  },
+  "settings": {
+    "assembly_profile": {
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "fps": 24,
+      "height": 576,
+      "width": 1024
+    },
+    "hand_reference": {
+      "bytes": 1022426,
+      "filename": "hand_reference.png",
+      "role": "hand_reference",
+      "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+    },
+    "keyframe_settings": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "models": [
+      {
+        "directory": "models/kokoro",
+        "files": [
+          {
+            "bytes": 2351,
+            "path": "config.json",
+            "sha256": null
+          },
+          {
+            "bytes": 327212226,
+            "path": "kokoro-v1_0.pth",
+            "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4"
+          },
+          {
+            "bytes": 523425,
+            "path": "voices/af_heart.pt",
+            "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff"
+          }
+        ],
+        "key": "kokoro",
+        "repo_id": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+      },
+      {
+        "directory": "ComfyUI/models",
+        "files": [
+          {
+            "bytes": 42018190584,
+            "path": "diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors",
+            "sha256": "792a2bad501ca03262c0bc2ce7a2949e85b142ce18e30894aad5bc849c8e7584"
+          },
+          {
+            "bytes": 26263858182,
+            "path": "text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+            "sha256": "ef7243612fdae7a75cb4d5cee9433e81380675fb6c213bd98ae74a9cd16561d1"
+          },
+          {
+            "bytes": 1472223346,
+            "path": "vae/ltx-2.5-video-vae-bf16.safetensors",
+            "sha256": "847e14ca7f3355debca0cea4eaa24ac0fbcdf0061da054ac89ca638a869ddba3"
+          },
+          {
+            "bytes": 364866540,
+            "path": "vae/ltx-2.5-audio-vae-bf16.safetensors",
+            "sha256": "c52733d37f6a7fb7949c3dc0fb468c6cb2169e4d836983a73babb9f0d54837a5"
+          },
+          {
+            "bytes": 8899889568,
+            "path": "loras/ltx-2.5-22b-distilled-lora-450-bf16.safetensors",
+            "sha256": "86370bbf79a9eb4edaa158907e2b48a5188fe4c5dc8ce30c7eb8f2f131a9bbf5"
+          },
+          {
+            "bytes": 995778752,
+            "path": "latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "eb5a71fe4068ee87ccdb1c3aa635e547ca76bd2d30ae20ae889f2c325c0677e8"
+          },
+          {
+            "bytes": 261944000,
+            "path": "latent_upscale_models/ltx-2.5-latent-temporal-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "2bc3300f2b3c3c1834d72164fbf13a3b9fd73e5a741e8a2c3f4035f89a75c3fe"
+          }
+        ],
+        "key": "ltx",
+        "repo_id": "Lightricks/LTX-2.5",
+        "revision": "5e6e71018ee1756ed329b697a7b4aedc934dfce9"
+      },
+      {
+        "directory": "models/msr",
+        "files": [
+          {
+            "bytes": 1308840536,
+            "path": "LTX-2.5-Licon-MSR-V1.safetensors",
+            "sha256": "d45cedd720e5819ccbe200a4b0ae01f7ae0e0d2966d700a24ebd4c7739515d4f"
+          },
+          {
+            "bytes": 72229,
+            "path": "LTX2.5-MSR-sample-workflow.json",
+            "sha256": null
+          }
+        ],
+        "key": "msr",
+        "repo_id": "LiconStudio/LTX-2.5-Multiple-Subject-Reference",
+        "revision": "9a053e6d63e54cd6970b1cda9419f1339457bd8c"
+      }
+    ],
+    "models_sha256": "f910dc55145b0550a63964f0c0a58d12c70824baf8c8fa01bd0079fdd8ae5acb",
+    "narration_review": null,
+    "pipeline_version": "narrated-video-v1",
+    "profile": {
+      "audio_cfg": 7.0,
+      "audio_policy": "kokoro_af_heart_only_no_ltx_audio_no_music",
+      "comfy_revision": "efa6c8f804bff78b46a0fd458ebd2e47bba07a30",
+      "draw_frames": 177,
+      "erase_frames": 73,
+      "fps": 24,
+      "guide_strength": 1.0,
+      "height": 576,
+      "loop_conditioning": "hand_only_msr_pinned_first_latent_end_temporal_guide",
+      "msr_revision": "98941179a82223a0a62219550272b2823b3e3a9c",
+      "msr_strength": 1.0,
+      "reference_frames": "33",
+      "refinement_sigmas": "0.85, 0.725, 0.421875, 0.0",
+      "steps": 30,
+      "timing_policy": "full_scene_narration_with_explicit_keyframe_reading_hold_then_erase",
+      "upscale": 2,
+      "version": "ltx-msr-whiteboard-v2",
+      "video_cfg": 3.0,
+      "width": 1024
+    },
+    "profile_sha256": "f000831004b2d84a01388e41d4e78d8f20ed662014ff3563971c8eca9f56f914",
+    "renderer": {
+      "blank": {
+        "file": "assets/references/blank_whiteboard.png",
+        "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+        "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+        "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+      },
+      "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "hand_white_key_blend": 0.03,
+      "hand_white_key_similarity": 0.1,
+      "hand_width_fraction": 0.55,
+      "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+      "name": "keyframe-composite-v1",
+      "new_ltx_generation": false,
+      "provider": "local_ffmpeg"
+    },
+    "speech_speed": 1.0,
+    "style_anchor": {
+      "bytes": 1530002,
+      "filename": "style_anchor.png",
+      "role": "style_anchor",
+      "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+    },
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    },
+    "voice": "af_heart"
+  },
+  "media_validation": {
+    "audio_codec": "aac",
+    "audio_duration_seconds": 126.25,
+    "audio_source": "complete_kokoro_narration.wav",
+    "audio_streams": 1,
+    "audio_video_duration_delta_seconds": 0.0,
+    "background_music": false,
+    "bytes": 15611015,
+    "decoded_audio_similarity": 0.9999122023582458,
+    "duration_seconds": 126.25,
+    "expected_pcm_sha256": "6f802a5015de4909e7c44fc3f8baf5eaf572442ce4b41784da580f3b86a8326f",
+    "full_decode": "passed",
+    "native_ltx_audio_used": false,
+    "sha256": "ac09d778a5710849467b3a58ea110cb674cea74d0b16558c90316e2aa27ea233",
+    "video_codec": "h264",
+    "video_duration_seconds": 126.25,
+    "video_frames": 3030
+  },
+  "http_download_sha256": "ac09d778a5710849467b3a58ea110cb674cea74d0b16558c90316e2aa27ea233",
+  "timeline": {
+    "duration_seconds": 126.25,
+    "fps": 24,
+    "frames": 3030,
+    "mode": "whiteboard_loop",
+    "scenes": [
+      {
+        "draw_frames": 97,
+        "end_seconds": 23.041666666666668,
+        "erase_frames": 25,
+        "erase_start_seconds": 22.0,
+        "frames": 553,
+        "narration_sha256": "eb59238f45e165680532214ee19c233ecef6da526b6d27154edaa4f4702a4ade",
+        "order": 1,
+        "reading_hold_frames": 431,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 22.0,
+        "showing_start_seconds": 4.041666666666667,
+        "silence_samples_after_speech": 25000,
+        "speech_end_seconds": 22.0,
+        "speech_samples": 528000,
+        "speech_start_seconds": 0.0,
+        "start_frame": 0,
+        "start_seconds": 0.0
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 46.375,
+        "erase_frames": 25,
+        "erase_start_seconds": 45.333333333333336,
+        "frames": 560,
+        "narration_sha256": "40f188665eb7d80f48c898fb847659d94bb656aae0c1ed321217203da10b859d",
+        "order": 2,
+        "reading_hold_frames": 438,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 45.333333333333336,
+        "showing_start_seconds": 27.083333333333332,
+        "silence_samples_after_speech": 25400,
+        "speech_end_seconds": 45.31666666666666,
+        "speech_samples": 534600,
+        "speech_start_seconds": 23.041666666666668,
+        "start_frame": 553,
+        "start_seconds": 23.041666666666668
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 70.16666666666667,
+        "erase_frames": 25,
+        "erase_start_seconds": 69.125,
+        "frames": 571,
+        "narration_sha256": "3fa869f950442399519d5bd538217964543343eb47b34a014766b2d0c41b6966",
+        "order": 3,
+        "reading_hold_frames": 449,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 69.125,
+        "showing_start_seconds": 50.416666666666664,
+        "silence_samples_after_speech": 25000,
+        "speech_end_seconds": 69.125,
+        "speech_samples": 546000,
+        "speech_start_seconds": 46.375,
+        "start_frame": 1113,
+        "start_seconds": 46.375
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 97.58333333333333,
+        "erase_frames": 25,
+        "erase_start_seconds": 96.54166666666667,
+        "frames": 658,
+        "narration_sha256": "890a4844c14e83d1e0a1d4780c36d6c8e9d08c8d59911ea256d1da44c0b6fdc3",
+        "order": 4,
+        "reading_hold_frames": 536,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 96.54166666666667,
+        "showing_start_seconds": 74.20833333333333,
+        "silence_samples_after_speech": 25000,
+        "speech_end_seconds": 96.54166666666667,
+        "speech_samples": 633000,
+        "speech_start_seconds": 70.16666666666667,
+        "start_frame": 1684,
+        "start_seconds": 70.16666666666667
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 126.25,
+        "erase_frames": 25,
+        "erase_start_seconds": 125.20833333333333,
+        "frames": 688,
+        "narration_sha256": "f873f216b7a1544972327781be3179b348ff9c006e553b0723bf46f9634d343b",
+        "order": 5,
+        "reading_hold_frames": 566,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 125.20833333333333,
+        "showing_start_seconds": 101.625,
+        "silence_samples_after_speech": 25600,
+        "speech_end_seconds": 125.18333333333334,
+        "speech_samples": 662400,
+        "speech_start_seconds": 97.58333333333333,
+        "start_frame": 2342,
+        "start_seconds": 97.58333333333333
+      }
+    ],
+    "speech_alignment": "current_scene_drawing_and_showing_then_silent_erasing",
+    "speech_samples": 2904000,
+    "speech_speed": 1.0,
+    "timing_basis": "measured_kokoro_samples",
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    }
+  },
+  "narration": [
+    {
+      "order": 1,
+      "title": "The Core Difference",
+      "narration": "Ionic and covalent bonds differ mainly in how electrons behave. In ionic bonding, electrons are transferred between atoms, producing charged ions whose opposite charges attract. In covalent bonding, atoms share electrons; the shared electrons are attracted by both nuclei. The result is a different kind of particle arrangement.",
+      "narration_sha256": "eb59238f45e165680532214ee19c233ecef6da526b6d27154edaa4f4702a4ade",
+      "source_ids": [
+        "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Ionic Bonding: A Lattice of Ions",
+      "narration": "In an ionic compound, a positive cation and a negative anion are held together by electrostatic attraction. Ionic solids form crystalline lattices, so sodium chloride is pictured as an extended alternating array of Na⁺ and Cl⁻ ions—not as separate NaCl molecules. In the solid, the ions are not free to move easily.",
+      "narration_sha256": "40f188665eb7d80f48c898fb847659d94bb656aae0c1ed321217203da10b859d",
+      "source_ids": [
+        "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+        "7b2c89017bd44e6effab91a3b47c8da70b511077e288b5c84e9212d3b553eeb8"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Covalent Bonding: Sharing in H₂",
+      "narration": "In a covalent bond, atoms share electrons. H₂ is a clear example: each hydrogen contributes one electron, and the two electrons occupy space around both nuclei. As the atoms approach, attraction lowers the potential energy; if they come too close, repulsion raises it. The stable bond distance is where the potential energy is lowest.",
+      "narration_sha256": "3fa869f950442399519d5bd538217964543343eb47b34a014766b2d0c41b6966",
+      "source_ids": [
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Electronegativity Creates a Continuum",
+      "narration": "Electronegativity—the tendency to attract electrons in a bond—helps place bonds on a continuum. A very small difference gives pure, nonpolar covalent sharing. An intermediate difference gives polar covalent sharing, with unequal sharing. A large difference is characterized as ionic. Rough guideposts are below 0.4, 0.4 to 1.8, and above 1.8, but the source notes exceptions.",
+      "narration_sha256": "890a4844c14e83d1e0a1d4780c36d6c8e9d08c8d59911ea256d1da44c0b6fdc3",
+      "source_ids": [
+        "a26c33369c316b6ff8e6ace5b44bb084a3d002198c0b79e7d0165a1089b39e25",
+        "8393826492bf69f35b8a80b55355d475bde3e2a9a0c97f9b555f9387581ed140",
+        "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Some Substances Contain Both",
+      "narration": "Here is the compact comparison: ionic bonding is electrostatic attraction among oppositely charged ions in a lattice; covalent bonding is shared electron density between atoms. One substance can contain both. In potassium nitrate, K⁺ and NO₃⁻ are held together ionically, while the nitrogen–oxygen bonds inside nitrate are covalent. So ask two questions: are there ions in a lattice, and are electrons shared between atoms?",
+      "narration_sha256": "f873f216b7a1544972327781be3179b348ff9c006e553b0723bf46f9634d343b",
+      "source_ids": [
+        "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0",
+        "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532"
+      ]
+    }
+  ],
+  "narration_review": {
+    "effective_scene_scripts": [
+      {
+        "narration": "Ionic and covalent bonds differ mainly in how electrons behave. In ionic bonding, electrons are transferred between atoms, producing charged ions whose opposite charges attract. In covalent bonding, atoms share electrons; the shared electrons are attracted by both nuclei. The result is a different kind of particle arrangement.",
+        "order": 1
+      },
+      {
+        "narration": "In an ionic compound, a positive cation and a negative anion are held together by electrostatic attraction. Ionic solids form crystalline lattices, so sodium chloride is pictured as an extended alternating array of Na⁺ and Cl⁻ ions—not as separate NaCl molecules. In the solid, the ions are not free to move easily.",
+        "order": 2
+      },
+      {
+        "narration": "In a covalent bond, atoms share electrons. H₂ is a clear example: each hydrogen contributes one electron, and the two electrons occupy space around both nuclei. As the atoms approach, attraction lowers the potential energy; if they come too close, repulsion raises it. The stable bond distance is where the potential energy is lowest.",
+        "order": 3
+      },
+      {
+        "narration": "Electronegativity—the tendency to attract electrons in a bond—helps place bonds on a continuum. A very small difference gives pure, nonpolar covalent sharing. An intermediate difference gives polar covalent sharing, with unequal sharing. A large difference is characterized as ionic. Rough guideposts are below 0.4, 0.4 to 1.8, and above 1.8, but the source notes exceptions.",
+        "order": 4
+      },
+      {
+        "narration": "Here is the compact comparison: ionic bonding is electrostatic attraction among oppositely charged ions in a lattice; covalent bonding is shared electron density between atoms. One substance can contain both. In potassium nitrate, K⁺ and NO₃⁻ are held together ionically, while the nitrogen–oxygen bonds inside nitrate are covalent. So ask two questions: are there ions in a lattice, and are electrons shared between atoms?",
+        "order": 5
+      }
+    ],
+    "narration_corrections": [],
+    "original_direction_sha256": "b120a582ce06b450ecb02237d52502a237afb91d5c50d722c3c78104e7f8acfc",
+    "original_scene_scripts": [
+      {
+        "narration": "Ionic and covalent bonds differ mainly in how electrons behave. In ionic bonding, electrons are transferred between atoms, producing charged ions whose opposite charges attract. In covalent bonding, atoms share electrons; the shared electrons are attracted by both nuclei. The result is a different kind of particle arrangement.",
+        "order": 1
+      },
+      {
+        "narration": "In an ionic compound, a positive cation and a negative anion are held together by electrostatic attraction. Ionic solids form crystalline lattices, so sodium chloride is pictured as an extended alternating array of Na⁺ and Cl⁻ ions—not as separate NaCl molecules. In the solid, the ions are not free to move easily.",
+        "order": 2
+      },
+      {
+        "narration": "In a covalent bond, atoms share electrons. H₂ is a clear example: each hydrogen contributes one electron, and the two electrons occupy space around both nuclei. As the atoms approach, attraction lowers the potential energy; if they come too close, repulsion raises it. The stable bond distance is where the potential energy is lowest.",
+        "order": 3
+      },
+      {
+        "narration": "Electronegativity—the tendency to attract electrons in a bond—helps place bonds on a continuum. A very small difference gives pure, nonpolar covalent sharing. An intermediate difference gives polar covalent sharing, with unequal sharing. A large difference is characterized as ionic. Rough guideposts are below 0.4, 0.4 to 1.8, and above 1.8, but the source notes exceptions.",
+        "order": 4
+      },
+      {
+        "narration": "Here is the compact comparison: ionic bonding is electrostatic attraction among oppositely charged ions in a lattice; covalent bonding is shared electron density between atoms. One substance can contain both. In potassium nitrate, K⁺ and NO₃⁻ are held together ionically, while the nitrogen–oxygen bonds inside nitrate are covalent. So ask two questions: are there ions in a lattice, and are electrons shared between atoms?",
+        "order": 5
+      }
+    ],
+    "review_sha256": null
+  },
+  "selection_review": {
+    "job_id": "3fe9b204-f51b-450d-a59f-2eb65aedf695",
+    "status": "accepted",
+    "reviewer": "root",
+    "scope": "Representative reveal, showing and erase frames from all five scenes in the canonical final MP4. Final sheets are byte-identical to the reviewed assembled previews. All complete Kokoro scripts, final AAC similarity and HTTP download checks passed.",
+    "contact_sheet": "data/tests/final-composite-review-v1/contrast-all-scenes.png",
+    "criteria": "Functional blank/drawing/showing/erase sequence, clear diagrams and labels, full scene-aligned narration; exact stroke physics is not required.",
+    "video_sha256": "ac09d778a5710849467b3a58ea110cb674cea74d0b16558c90316e2aa27ea233"
+  },
+  "provenance": {
+    "generation_manifest_sha256": "896bb852596e8e2245b13d2cf281a7e956c8e7dc86d1bcd139e8f229a16cb444",
+    "source_snapshot_sha256": "1a8a79ee07dfaeec592d0976798bcf2e736b86a5b47e449899ee9b4c0b34a557",
+    "corpus_id": "5ca36c3eb893c60ad909db9776e60714f6bdd1d5f1cc76a8ce56aa5d4e1278e7",
+    "models": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "keyframes": [
+      {
+        "order": 1,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2814978,
+          "height": 1152,
+          "sha256": "d122fd167da52de3880948378076dd507b9f245c8a979b4c730d25bfd46c0fe7",
+          "width": 2048
+        },
+        "source_ids": [
+          "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+        ]
+      },
+      {
+        "order": 2,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2955343,
+          "height": 1152,
+          "sha256": "9ba4b74ebedcc97ce65702d40c3f33db8d6c798e2cfa53b76d4185f91035aeb7",
+          "width": 2048
+        },
+        "source_ids": [
+          "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+          "7b2c89017bd44e6effab91a3b47c8da70b511077e288b5c84e9212d3b553eeb8"
+        ]
+      },
+      {
+        "order": 3,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2670110,
+          "height": 1152,
+          "sha256": "58e86a9f063c1349ed35b94caebdf5989b6cadda823f217ae9a5522fd35ce54a",
+          "width": 2048
+        },
+        "source_ids": [
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+        ]
+      },
+      {
+        "order": 4,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2604881,
+          "height": 1152,
+          "sha256": "27ae6e2bee854ff221b9d53e9814a5bb8e7c63afd6f6acc6832dd5edff818cbc",
+          "width": 2048
+        },
+        "source_ids": [
+          "a26c33369c316b6ff8e6ace5b44bb084a3d002198c0b79e7d0165a1089b39e25",
+          "8393826492bf69f35b8a80b55355d475bde3e2a9a0c97f9b555f9387581ed140",
+          "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0"
+        ]
+      },
+      {
+        "order": 5,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2953484,
+          "height": 1152,
+          "sha256": "2e4ecdd1ada82dc4ab8454ab7181aeab397912389599a123e7c1821c1ab2afba",
+          "width": 2048
+        },
+        "source_ids": [
+          "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0",
+          "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "id": "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=7",
+        "page_number": 7,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "b704641a5ab335fd47c1a6981cc9c2ef851f242f7c037002b9344a46d98960c9",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=8",
+        "page_number": 8,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=4",
+        "page_number": 4,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "8393826492bf69f35b8a80b55355d475bde3e2a9a0c97f9b555f9387581ed140",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=7",
+        "page_number": 7,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "3fca95ef7ac8961a259aa9b9bce5b2c9b13ffd43dff3d02420bda13ec524ca78",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=9",
+        "page_number": 9,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "a26c33369c316b6ff8e6ace5b44bb084a3d002198c0b79e7d0165a1089b39e25",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=6",
+        "page_number": 6,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "7b2c89017bd44e6effab91a3b47c8da70b511077e288b5c84e9212d3b553eeb8",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      }
+    ],
+    "original_test_artifacts": "data/tests/3fe9b204-f51b-450d-a59f-2eb65aedf695",
+    "api_acceptance_artifacts": "data/tests/final-composite-contrast-v1"
+  }
+}

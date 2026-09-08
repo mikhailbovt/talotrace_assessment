@@ -1,0 +1,602 @@
+{
+  "schema_version": "selected-video-example-v1",
+  "question": "Why do atoms form covalent bonds?",
+  "video_file": "covalent-bonds.mp4",
+  "narration_file": "covalent-bonds.narration.md",
+  "video_job_id": "6601dd63-d29d-4aff-a628-ce610abdb121",
+  "keyframe_job_id": "e65c1a37-e28a-50b0-a148-58caa1e70200",
+  "mode": "whiteboard_loop",
+  "renderer": {
+    "blank": {
+      "file": "assets/references/blank_whiteboard.png",
+      "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+      "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+      "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+    },
+    "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+    "draw_frames": 97,
+    "erase_frames": 25,
+    "hand_white_key_blend": 0.03,
+    "hand_white_key_similarity": 0.1,
+    "hand_width_fraction": 0.55,
+    "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+    "name": "keyframe-composite-v1",
+    "new_ltx_generation": false,
+    "provider": "local_ffmpeg"
+  },
+  "settings": {
+    "assembly_profile": {
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "fps": 24,
+      "height": 576,
+      "width": 1024
+    },
+    "hand_reference": {
+      "bytes": 1022426,
+      "filename": "hand_reference.png",
+      "role": "hand_reference",
+      "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+    },
+    "keyframe_settings": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "models": [
+      {
+        "directory": "models/kokoro",
+        "files": [
+          {
+            "bytes": 2351,
+            "path": "config.json",
+            "sha256": null
+          },
+          {
+            "bytes": 327212226,
+            "path": "kokoro-v1_0.pth",
+            "sha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4"
+          },
+          {
+            "bytes": 523425,
+            "path": "voices/af_heart.pt",
+            "sha256": "0ab5709b8ffab19bfd849cd11d98f75b60af7733253ad0d67b12382a102cb4ff"
+          }
+        ],
+        "key": "kokoro",
+        "repo_id": "hexgrad/Kokoro-82M",
+        "revision": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+      },
+      {
+        "directory": "ComfyUI/models",
+        "files": [
+          {
+            "bytes": 42018190584,
+            "path": "diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors",
+            "sha256": "792a2bad501ca03262c0bc2ce7a2949e85b142ce18e30894aad5bc849c8e7584"
+          },
+          {
+            "bytes": 26263858182,
+            "path": "text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+            "sha256": "ef7243612fdae7a75cb4d5cee9433e81380675fb6c213bd98ae74a9cd16561d1"
+          },
+          {
+            "bytes": 1472223346,
+            "path": "vae/ltx-2.5-video-vae-bf16.safetensors",
+            "sha256": "847e14ca7f3355debca0cea4eaa24ac0fbcdf0061da054ac89ca638a869ddba3"
+          },
+          {
+            "bytes": 364866540,
+            "path": "vae/ltx-2.5-audio-vae-bf16.safetensors",
+            "sha256": "c52733d37f6a7fb7949c3dc0fb468c6cb2169e4d836983a73babb9f0d54837a5"
+          },
+          {
+            "bytes": 8899889568,
+            "path": "loras/ltx-2.5-22b-distilled-lora-450-bf16.safetensors",
+            "sha256": "86370bbf79a9eb4edaa158907e2b48a5188fe4c5dc8ce30c7eb8f2f131a9bbf5"
+          },
+          {
+            "bytes": 995778752,
+            "path": "latent_upscale_models/ltx-2.5-latent-spatial-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "eb5a71fe4068ee87ccdb1c3aa635e547ca76bd2d30ae20ae889f2c325c0677e8"
+          },
+          {
+            "bytes": 261944000,
+            "path": "latent_upscale_models/ltx-2.5-latent-temporal-upscaler-x2-bf16-1.0.safetensors",
+            "sha256": "2bc3300f2b3c3c1834d72164fbf13a3b9fd73e5a741e8a2c3f4035f89a75c3fe"
+          }
+        ],
+        "key": "ltx",
+        "repo_id": "Lightricks/LTX-2.5",
+        "revision": "5e6e71018ee1756ed329b697a7b4aedc934dfce9"
+      },
+      {
+        "directory": "models/msr",
+        "files": [
+          {
+            "bytes": 1308840536,
+            "path": "LTX-2.5-Licon-MSR-V1.safetensors",
+            "sha256": "d45cedd720e5819ccbe200a4b0ae01f7ae0e0d2966d700a24ebd4c7739515d4f"
+          },
+          {
+            "bytes": 72229,
+            "path": "LTX2.5-MSR-sample-workflow.json",
+            "sha256": null
+          }
+        ],
+        "key": "msr",
+        "repo_id": "LiconStudio/LTX-2.5-Multiple-Subject-Reference",
+        "revision": "9a053e6d63e54cd6970b1cda9419f1339457bd8c"
+      }
+    ],
+    "models_sha256": "f910dc55145b0550a63964f0c0a58d12c70824baf8c8fa01bd0079fdd8ae5acb",
+    "narration_review": null,
+    "pipeline_version": "narrated-video-v1",
+    "profile": {
+      "audio_cfg": 7.0,
+      "audio_policy": "kokoro_af_heart_only_no_ltx_audio_no_music",
+      "comfy_revision": "efa6c8f804bff78b46a0fd458ebd2e47bba07a30",
+      "draw_frames": 177,
+      "erase_frames": 73,
+      "fps": 24,
+      "guide_strength": 1.0,
+      "height": 576,
+      "loop_conditioning": "hand_only_msr_pinned_first_latent_end_temporal_guide",
+      "msr_revision": "98941179a82223a0a62219550272b2823b3e3a9c",
+      "msr_strength": 1.0,
+      "reference_frames": "33",
+      "refinement_sigmas": "0.85, 0.725, 0.421875, 0.0",
+      "steps": 30,
+      "timing_policy": "full_scene_narration_with_explicit_keyframe_reading_hold_then_erase",
+      "upscale": 2,
+      "version": "ltx-msr-whiteboard-v2",
+      "video_cfg": 3.0,
+      "width": 1024
+    },
+    "profile_sha256": "f000831004b2d84a01388e41d4e78d8f20ed662014ff3563971c8eca9f56f914",
+    "renderer": {
+      "blank": {
+        "file": "assets/references/blank_whiteboard.png",
+        "provider_receipt_file": "configs/blank_whiteboard.receipt.json",
+        "provider_receipt_sha256": "36a278631f0307f9c5ee31bb60112b7d2eb3a90b8dadf926a9be5b52ec684979",
+        "sha256": "b823a53ddb1f36e6ff333c70d570a630fd2a84f693e71dbae75ca5534289c48f"
+      },
+      "blank_manifest_sha256": "a3a12ed07f3ff7b3a62f4c93e505c57200fb1a9fae69f5f4f7b24f1442af43e4",
+      "draw_frames": 97,
+      "erase_frames": 25,
+      "hand_white_key_blend": 0.03,
+      "hand_white_key_similarity": 0.1,
+      "hand_width_fraction": 0.55,
+      "motion": "supplied_hand_sweep_with_keyframe_reveal_then_clean_wipe",
+      "name": "keyframe-composite-v1",
+      "new_ltx_generation": false,
+      "provider": "local_ffmpeg"
+    },
+    "speech_speed": 1.0,
+    "style_anchor": {
+      "bytes": 1530002,
+      "filename": "style_anchor.png",
+      "role": "style_anchor",
+      "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+    },
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    },
+    "voice": "af_heart"
+  },
+  "media_validation": {
+    "audio_codec": "aac",
+    "audio_duration_seconds": 78.542,
+    "audio_source": "complete_kokoro_narration.wav",
+    "audio_streams": 1,
+    "audio_video_duration_delta_seconds": 8.000000008223651e-06,
+    "background_music": false,
+    "bytes": 12257500,
+    "decoded_audio_similarity": 0.9999102354049683,
+    "duration_seconds": 78.54166666666667,
+    "expected_pcm_sha256": "e85ba2e68bb2d12f92ebbbff530af94fa4f3a77088314233b52ceabb5d70eb0a",
+    "full_decode": "passed",
+    "native_ltx_audio_used": false,
+    "sha256": "cfa3917235b3d054acf47c683b8c2bf7387dbcbb8291925a4d3caf2c7f550abe",
+    "video_codec": "h264",
+    "video_duration_seconds": 78.541992,
+    "video_frames": 1885
+  },
+  "http_download_sha256": "cfa3917235b3d054acf47c683b8c2bf7387dbcbb8291925a4d3caf2c7f550abe",
+  "timeline": {
+    "duration_seconds": 78.54166666666667,
+    "fps": 24,
+    "frames": 1885,
+    "mode": "whiteboard_loop",
+    "scenes": [
+      {
+        "draw_frames": 97,
+        "end_seconds": 15.625,
+        "erase_frames": 25,
+        "erase_start_seconds": 14.583333333333334,
+        "frames": 375,
+        "narration_sha256": "cdb9a2ce2129da3342f1d02ed797a58568b09020be9bb0e937562c08889137cb",
+        "order": 1,
+        "reading_hold_frames": 253,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 14.583333333333334,
+        "showing_start_seconds": 4.041666666666667,
+        "silence_samples_after_speech": 25800,
+        "speech_end_seconds": 14.55,
+        "speech_samples": 349200,
+        "speech_start_seconds": 0.0,
+        "start_frame": 0,
+        "start_seconds": 0.0
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 31.666666666666668,
+        "erase_frames": 25,
+        "erase_start_seconds": 30.625,
+        "frames": 385,
+        "narration_sha256": "656e212ca5910d0dc0e0e0d685b2ab516316af789ac623c15ba0918fc8e05555",
+        "order": 2,
+        "reading_hold_frames": 263,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 30.625,
+        "showing_start_seconds": 19.666666666666668,
+        "silence_samples_after_speech": 25000,
+        "speech_end_seconds": 30.625,
+        "speech_samples": 360000,
+        "speech_start_seconds": 15.625,
+        "start_frame": 375,
+        "start_seconds": 15.625
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 47.291666666666664,
+        "erase_frames": 25,
+        "erase_start_seconds": 46.25,
+        "frames": 375,
+        "narration_sha256": "6e9d6842d4a3cbd82692c0d9a62c33d6bf2a8e021876226fc63d3cd008d6ade9",
+        "order": 3,
+        "reading_hold_frames": 253,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 46.25,
+        "showing_start_seconds": 35.708333333333336,
+        "silence_samples_after_speech": 25800,
+        "speech_end_seconds": 46.21666666666667,
+        "speech_samples": 349200,
+        "speech_start_seconds": 31.666666666666668,
+        "start_frame": 760,
+        "start_seconds": 31.666666666666668
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 61.916666666666664,
+        "erase_frames": 25,
+        "erase_start_seconds": 60.875,
+        "frames": 351,
+        "narration_sha256": "39bc27c8092e092f5a3ed60bdb527c9386da0ac3928bff68e37305bdefb23295",
+        "order": 4,
+        "reading_hold_frames": 229,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 60.875,
+        "showing_start_seconds": 51.333333333333336,
+        "silence_samples_after_speech": 25200,
+        "speech_end_seconds": 60.86666666666666,
+        "speech_samples": 325800,
+        "speech_start_seconds": 47.291666666666664,
+        "start_frame": 1135,
+        "start_seconds": 47.291666666666664
+      },
+      {
+        "draw_frames": 97,
+        "end_seconds": 78.54166666666667,
+        "erase_frames": 25,
+        "erase_start_seconds": 77.5,
+        "frames": 399,
+        "narration_sha256": "e0a0e81829f7b30b9c21be752fbb2749352579708428f8eb35c85bb707465c57",
+        "order": 5,
+        "reading_hold_frames": 277,
+        "reading_hold_source": "exact_generated_keyframe",
+        "showing_end_seconds": 77.5,
+        "showing_start_seconds": 65.95833333333333,
+        "silence_samples_after_speech": 25200,
+        "speech_end_seconds": 77.49166666666666,
+        "speech_samples": 373800,
+        "speech_start_seconds": 61.916666666666664,
+        "start_frame": 1486,
+        "start_seconds": 61.916666666666664
+      }
+    ],
+    "speech_alignment": "current_scene_drawing_and_showing_then_silent_erasing",
+    "speech_samples": 1758000,
+    "speech_speed": 1.0,
+    "timing_basis": "measured_kokoro_samples",
+    "timing_policy": {
+      "minimum_showing_seconds": 2.0,
+      "version": "scene-timing-v2"
+    }
+  },
+  "narration": [
+    {
+      "order": 1,
+      "title": "Sharing, Not Transferring",
+      "narration": "Atoms form covalent bonds when two atoms have similar tendencies to attract electrons. Rather than transferring electrons, the atoms share them between both nuclei. That shared electron pair is the covalent bond.",
+      "narration_sha256": "cdb9a2ce2129da3342f1d02ed797a58568b09020be9bb0e937562c08889137cb",
+      "source_ids": [
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+        "b704641a5ab335fd47c1a6981cc9c2ef851f242f7c037002b9344a46d98960c9"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "The H₂ Example",
+      "narration": "Hydrogen gives a simple example. Each H atom contributes one electron. The two electrons are shared equally in H₂, so each electron is attracted to both positive nuclei. This is a pure covalent bond.",
+      "narration_sha256": "656e212ca5910d0dc0e0e0d685b2ab516316af789ac623c15ba0918fc8e05555",
+      "source_ids": [
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+        "1b6047d6fc3da585673bbeb1e3ff9119eb18bc0aa30e8854badf567a2dfc38db"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Attraction and Repulsion",
+      "narration": "As the atoms approach, their 1s orbitals overlap and attraction lowers the system’s potential energy. But if the nuclei come too close, electron–electron and nucleus–nucleus repulsions raise the energy.",
+      "narration_sha256": "6e9d6842d4a3cbd82692c0d9a62c33d6bf2a8e021876226fc63d3cd008d6ade9",
+      "source_ids": [
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+        "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Orbital Overlap Makes the Link",
+      "narration": "A covalent bond forms when an orbital on each atom overlaps and their single electrons form a shared pair. That negatively charged pair is attracted to both positive nuclei, physically linking the atoms.",
+      "narration_sha256": "39bc27c8092e092f5a3ed60bdb527c9386da0ac3928bff68e37305bdefb23295",
+      "source_ids": [
+        "05830ee493499d7fad609b24663ed1e725eea868f6780f769582db5e07a85768",
+        "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Why the Bond Is Stable",
+      "narration": "At this arrangement, pulling the atoms apart requires added energy to overcome their attraction. So atoms form the covalent bond because sharing electron density with both nuclei creates a lower-energy, stable H₂ arrangement.",
+      "narration_sha256": "e0a0e81829f7b30b9c21be752fbb2749352579708428f8eb35c85bb707465c57",
+      "source_ids": [
+        "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3",
+        "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+      ]
+    }
+  ],
+  "narration_review": {
+    "effective_scene_scripts": [
+      {
+        "narration": "Atoms form covalent bonds when two atoms have similar tendencies to attract electrons. Rather than transferring electrons, the atoms share them between both nuclei. That shared electron pair is the covalent bond.",
+        "order": 1
+      },
+      {
+        "narration": "Hydrogen gives a simple example. Each H atom contributes one electron. The two electrons are shared equally in H₂, so each electron is attracted to both positive nuclei. This is a pure covalent bond.",
+        "order": 2
+      },
+      {
+        "narration": "As the atoms approach, their 1s orbitals overlap and attraction lowers the system’s potential energy. But if the nuclei come too close, electron–electron and nucleus–nucleus repulsions raise the energy.",
+        "order": 3
+      },
+      {
+        "narration": "A covalent bond forms when an orbital on each atom overlaps and their single electrons form a shared pair. That negatively charged pair is attracted to both positive nuclei, physically linking the atoms.",
+        "order": 4
+      },
+      {
+        "narration": "At this arrangement, pulling the atoms apart requires added energy to overcome their attraction. So atoms form the covalent bond because sharing electron density with both nuclei creates a lower-energy, stable H₂ arrangement.",
+        "order": 5
+      }
+    ],
+    "narration_corrections": [],
+    "original_direction_sha256": "374e21c567376118bde8ae71c2d0eb9f86a44405151f1f61da5ab6de39e4ad77",
+    "original_scene_scripts": [
+      {
+        "narration": "Atoms form covalent bonds when two atoms have similar tendencies to attract electrons. Rather than transferring electrons, the atoms share them between both nuclei. That shared electron pair is the covalent bond.",
+        "order": 1
+      },
+      {
+        "narration": "Hydrogen gives a simple example. Each H atom contributes one electron. The two electrons are shared equally in H₂, so each electron is attracted to both positive nuclei. This is a pure covalent bond.",
+        "order": 2
+      },
+      {
+        "narration": "As the atoms approach, their 1s orbitals overlap and attraction lowers the system’s potential energy. But if the nuclei come too close, electron–electron and nucleus–nucleus repulsions raise the energy.",
+        "order": 3
+      },
+      {
+        "narration": "A covalent bond forms when an orbital on each atom overlaps and their single electrons form a shared pair. That negatively charged pair is attracted to both positive nuclei, physically linking the atoms.",
+        "order": 4
+      },
+      {
+        "narration": "At this arrangement, pulling the atoms apart requires added energy to overcome their attraction. So atoms form the covalent bond because sharing electron density with both nuclei creates a lower-energy, stable H₂ arrangement.",
+        "order": 5
+      }
+    ],
+    "review_sha256": null
+  },
+  "selection_review": {
+    "job_id": "6601dd63-d29d-4aff-a628-ce610abdb121",
+    "status": "accepted",
+    "reviewer": "root",
+    "scope": "Representative drawing, showing and erasing frames from all five scenes in the final MP4; accepted source diagrams; complete narration verified by saved Kokoro receipts and decoded AAC similarity.",
+    "contact_sheet": "data/tests/final-composite-review-v1/covalent/contact-sheet.jpg",
+    "criteria": "Functional blank/drawing/showing/erase sequence, clear diagrams and labels, full scene-aligned narration; exact stroke physics is not required.",
+    "video_sha256": "cfa3917235b3d054acf47c683b8c2bf7387dbcbb8291925a4d3caf2c7f550abe"
+  },
+  "provenance": {
+    "generation_manifest_sha256": "b6350f52f4656d2866711309bb8af1cf2094c23d01c9c07b5e8f0d77ebc7f44b",
+    "source_snapshot_sha256": "197c390385a1d86043c91b9f9c548b5c734a246e301e033ab8c790f9b3b6773a",
+    "corpus_id": "5ca36c3eb893c60ad909db9776e60714f6bdd1d5f1cc76a8ce56aa5d4e1278e7",
+    "models": {
+      "director_model": "gpt-5.6-luna",
+      "embedding_dimensions": 3072,
+      "embedding_model": "text-embedding-3-large",
+      "hand_reference": {
+        "bytes": 1022426,
+        "filename": "hand_reference.png",
+        "role": "hand_reference",
+        "sha256": "59379ed62510c9543eec808f796b3b27261ec5db0ac93fcfa6eaccd4e550d587"
+      },
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "image_size": "2048x1152",
+      "pipeline_version": "keyframes-v1",
+      "style_anchor": {
+        "bytes": 1530002,
+        "filename": "style_anchor.png",
+        "role": "style_anchor",
+        "sha256": "fadb2c7d2d115b3ee2db33acb847df362d6da5af59d4b33a5d2dbb1bbd48ab1a"
+      }
+    },
+    "keyframes": [
+      {
+        "order": 1,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2758167,
+          "height": 1152,
+          "sha256": "073055de94253948cad9a31050a66cd820bfee24d9d103a98833c64176770a7c",
+          "width": 2048
+        },
+        "source_ids": [
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+          "b704641a5ab335fd47c1a6981cc9c2ef851f242f7c037002b9344a46d98960c9"
+        ]
+      },
+      {
+        "order": 2,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2596475,
+          "height": 1152,
+          "sha256": "3953bbdae557fca4b84a4c0aafb254a5ace29aa2c7312c5e205bf4bf681c14f8",
+          "width": 2048
+        },
+        "source_ids": [
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+          "1b6047d6fc3da585673bbeb1e3ff9119eb18bc0aa30e8854badf567a2dfc38db"
+        ]
+      },
+      {
+        "order": 3,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2624261,
+          "height": 1152,
+          "sha256": "bf19b5375be10c16f318ec3abcf5c31e9fda24052335124e60f3f5c5fa8ebdf5",
+          "width": 2048
+        },
+        "source_ids": [
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+          "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3"
+        ]
+      },
+      {
+        "order": 4,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2742268,
+          "height": 1152,
+          "sha256": "39dc403ebdd84099b98db12c4fb86e5040471f3f9ae36bc4e5a418c35a520a6c",
+          "width": 2048
+        },
+        "source_ids": [
+          "05830ee493499d7fad609b24663ed1e725eea868f6780f769582db5e07a85768",
+          "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3"
+        ]
+      },
+      {
+        "order": 5,
+        "model": "gpt-image-2",
+        "image": {
+          "bytes": 2594070,
+          "height": 1152,
+          "sha256": "595041ca2be73d44515127ccd0acfb1448c4fbc58196030a4177cea91c3fcec6",
+          "width": 2048
+        },
+        "source_ids": [
+          "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3",
+          "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16"
+        ]
+      }
+    ],
+    "citations": [
+      {
+        "id": "efb6ef8d4311923a8bdeac440d64c864356bacb8fe10d23c677d04dc4574ac16",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=4",
+        "page_number": 4,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "b704641a5ab335fd47c1a6981cc9c2ef851f242f7c037002b9344a46d98960c9",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=8",
+        "page_number": 8,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "f5a563748bae26b43f3a5e4eeefd2cc8134381ab092f954f2eb190c5266543a0",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=7",
+        "page_number": 7,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "05830ee493499d7fad609b24663ed1e725eea868f6780f769582db5e07a85768",
+        "title": "7.1:  Valence Bond Theory and Hybrid Orbitals",
+        "citation": "Individual/7.1! Valence Bond Theory and Hybrid Orbitals.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "96c4fb8a4ded5c04e4e2bf8cf092ba87f41a1adfb3c710c6ff2d03364658b3ce"
+      },
+      {
+        "id": "8cc5cda3553cea0c6999180fa87884eae7409861272bec7d63eb41ec5b948532",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "1b6047d6fc3da585673bbeb1e3ff9119eb18bc0aa30e8854badf567a2dfc38db",
+        "title": "6.1:  Ionic and Covalent Bonding",
+        "citation": "Individual/6.1! Ionic and Covalent Bonding.pdf#page=5",
+        "page_number": 5,
+        "file_sha256": "40a97c0ffc166d92e13472266ea355a371ff7dca795a6c52088c466d425cf769"
+      },
+      {
+        "id": "7d6ddd916b74bc317d6d542dc11013939965e8b571e832c875295861b2b8446e",
+        "title": "6.2:  Lewis Symbols and Structures",
+        "citation": "Individual/6.2! Lewis Symbols and Structures.pdf#page=2",
+        "page_number": 2,
+        "file_sha256": "17ace729a39173be2b9ace15dfb34dc410316e8b67c9bf87484032187ed6c0a7"
+      },
+      {
+        "id": "d6ac0f4462d38fb9333c4c847cf8e4cb6791e8be9738e4d575884170da655ce3",
+        "title": "7.1:  Valence Bond Theory and Hybrid Orbitals",
+        "citation": "Individual/7.1! Valence Bond Theory and Hybrid Orbitals.pdf#page=1",
+        "page_number": 1,
+        "file_sha256": "96c4fb8a4ded5c04e4e2bf8cf092ba87f41a1adfb3c710c6ff2d03364658b3ce"
+      }
+    ],
+    "original_test_artifacts": "data/tests/6601dd63-d29d-4aff-a628-ce610abdb121",
+    "api_acceptance_artifacts": "data/tests/final-composite-covalent-v1"
+  }
+}
